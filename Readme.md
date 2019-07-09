@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Каминский](https://up.htmlacademy.ru/adaptive/17/user/450679).
-* Наставник: [Елена Забара] (https://htmlacademy.ru/profile/lena___elena).
+* Наставник: [Елена наставник Забара] (https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
