@@ -24,9 +24,10 @@
           <form class="programe-choise-form">
             <h1 class="programe-choise-form__legend">Подбор программы</h1>
             <fieldset class="programe-choise-form__fieldset">
-              <p class="programe-choise-form__description">Заполните анкету и мы подберем
+              <legend class="visually-hidden">Имя Вес Возраст</legend>
+              <h2 class="programe-choise-form__description">Заполните анкету и мы подберем
                                                         программу питания для вашего кота
-              </p>
+              </h2>
               <div class="programe-choise-form__input">
                 <label class="programe-choise-form__label" for="name">Имя:*</label>
                 <input id="name" type="text" placeholder="Барсик">
@@ -37,12 +38,13 @@
               </div>
             </fieldset>
             <fieldset class="programe-choise-form__fieldset">
+              <legend class="visually-hidden">Похудение Масса Совет</legend>
               <div class="programe-choise-form__input">
-                <input id="slim" type="radio" checked>
+                <input id="slim" type="radio" name="radio" value="slim" checked>
                 <label class="programe-choise-form__label" for="slim">Похудение</label>
-                <input id="mass" type="radio">
+                <input id="mass" type="radio" name="radio"  value="mass">
                 <label class="programe-choise-form__label" for="mass">Набор массы</label>
-                <input id="advice" type="radio">
+                <input id="advice" type="radio" name="radio" value="advice">
                 <label class="programe-choise-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
               </div>
             </fieldset>
@@ -78,7 +80,7 @@
             <span class="programe-choise-form__commite">* — Обязательные поля</span>
           </form>
         <footer class="main-footer">
-            <h1 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h1>
+            <h3 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h3>
             <ul class="main-footer__list">
               <li class="main-footer__item cooperation">приглашаем
                                                                 к сотрудничеству
