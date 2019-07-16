@@ -15,65 +15,67 @@
               <ul class="main-nav-list site-list">
                 <li class="site-list-item"><a class="site-list-link" href="index.html">Главная</a></li>
                 <li class="site-list-item"><a class="site-list-link" href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list-item"><a class="site-list-link" href="form.html">Подбор программы</a></li>
+                <li class="site-list-item"><a class="site-list-link">Подбор программы</a></li>
               </ul>
             </div>
           </nav>
         </header>
         <main class="form-main">
           <form class="programe-choise-form">
-            <article class="programe-choise-form name-age-weight">
-              <h1 class="name-age-weight_title">Подбор программы</h1>
-              <p class="name-age-weight_description">Заполните анкету и мы подберем
+            <h1 class="programe-choise-form__legend">Подбор программы</h1>
+            <fieldset class="programe-choise-form__fieldset">
+              <p class="programe-choise-form__description">Заполните анкету и мы подберем
                                                         программу питания для вашего кота
               </p>
-              <div class="name-age-weight name-and-age">
-                <label class="name-and-age__name" for="name">Имя:*</label>
-                <input id="name" type="text" value="Барсик">
-                <label class="name-and-age__weight" for="weight">Вес (кг):*</label>
-                <input id="weight" type="text" value="7">
-                <label class="name-and-age__age" for="age">Возраст (лет):</label>
-                <input id="age" type="text" value="7">
+              <div class="programe-choise-form__input">
+                <label class="programe-choise-form__label" for="name">Имя:*</label>
+                <input id="name" type="text" placeholder="Барсик">
+                <label class="programe-choise-form__label" for="weight">Вес (кг):*</label>
+                <input id="weight" type="text" placeholder="7">
+                <label class="programe-choise-form__label" for="age">Возраст (лет):</label>
+                <input id="age" type="text" placeholder="7">
               </div>
-            </article>
-            <article class="programe-choise-form slim-mass">
-              <div class="slim-mass slim-mass-form">
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <div class="programe-choise-form__input">
                 <input id="slim" type="radio" checked>
-                <label class="slim-mass-form__slim" for="slim">Похудение</label>
+                <label class="programe-choise-form__label" for="slim">Похудение</label>
                 <input id="mass" type="radio">
-                <label class="slim-mass-form__mass" for="mass">Набор массы</label>
+                <label class="programe-choise-form__label" for="mass">Набор массы</label>
                 <input id="advice" type="radio">
-                <label class="slim-mass-form__advice" for="advice">Не знаю (Нужен ваш совет)</label>
+                <label class="programe-choise-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
               </div>
-            </article>
-            <article class="programe-choise-form user-contacts">
-              <h2 class="user-contacts__title">Контактные данные
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="programe-choise-form__legend">Контактные данные
                                               (владельца кота)
-              </h2>
-              <div class="user-contacts user-contacts-form">
-                <label class="user-contacts-form__email" for="email">E-mail:*</label>
-                <input id="email" type="email" value="kuklachev@gmail.com">
-                <label class="user-contacts-form__tel" for="tel">Телефон:*</label>
-                <input id="tel" type="text" value="8 (960) 900-60-90">  <!--value не работает при type="number" а если type="text" то как сделать что бы вводились только цифры?-->
-                <h2 class="user-contacts__comment">Комментарий</h2>
-                <textarea class="user-contacts-form__comment" type="text" cols="35" rows="15">Расскажите обо всех повадках кота</textarea>
+              </legend>
+              <div class="programe-choise-form__input">
+                <label class="programe-choise-form__label" for="email">E-mail:*</label>
+                <input id="email" type="email" placeholder="kuklachev@gmail.com">
+                <label class="programe-choise-form__label" for="tel">Телефон:*</label>
+                <input type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
               </div>
-            </article>
-            <article class="programe-choise-form additionally">
-              <h2 class="additionally__title">Дополнительно</h2>
-              <div class="additionally-form">
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+                <legend class="programe-choise-form__legend">Комментарий</legend>
+                <textarea class="programe-choise-form__comment" cols="35" rows="15">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="programe-choise-form__legend">Дополнительно</legend>
+              <div class="programe-choise-form__input">
                   <input id="sugar" type="checkbox" checked>
-                  <label class="additionally-form__sudar" for="sugar">Сахарозаменитель</label>
+                  <label class="programe-choise-form__label" for="sugar">Сахарозаменитель</label>
                   <input id="water" type="checkbox">
-                  <label class="additionally-form__water" for="water">Питьевая вода</label>
+                  <label class="programe-choise-form__label" for="water">Питьевая вода</label>
                   <input id="milk" type="checkbox">
-                  <label class="additionally-form__milk" for="milk">Молоко</label>
+                  <label class="programe-choise-form__label" for="milk">Молоко</label>
                   <input id="vitamins" type="checkbox">
-                  <label class="additionally-form__vitamins" for="vitamins">Витамины</label>
+                  <label class="programe-choise-form__label" for="vitamins">Витамины</label>
               </div>
-            </article>
-            <a class="programe-choise-form order-botton" href="#">Отправить заявку</a>
-            <span class="programe-choise-form commite">* — Обязательные поля</span>
+            </fieldset>
+            <button class="programe-choise-form__order-botton" type="submit" value="отправить заявку">Отправить заявку</button>
+            <span class="programe-choise-form__commite">* — Обязательные поля</span>
           </form>
         <footer class="main-footer">
             <h1 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h1>
