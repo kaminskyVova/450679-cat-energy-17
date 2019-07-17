@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи - Анкета для выбора программы питания </title>
+  </head>
+  <body>
+      <header class="main-header">
+          <a class="main-header__logo">
+            <img class="main-header__logo-image" src="http://placehold.it/150x100"  alt="функциональный корм для котов">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открывает Меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav-list site-list">
+                <li class="site-list-item"><a class="site-list-link" href="index.html">Главная</a></li>
+                <li class="site-list-item"><a class="site-list-link" href="catalog.html">Каталог продукции</a></li>
+                <li class="site-list-item"><a class="site-list-link">Подбор программы</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main class="form-main">
+          <form class="programe-choise-form">
+            <h1 class="programe-choise-form__legend">Подбор программы</h1>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="visually-hidden">Имя Вес Возраст</legend>
+              <h2 class="programe-choise-form__description">Заполните анкету и мы подберем
+                                                        программу питания для вашего кота
+              </h2>
+              <div class="programe-choise-form__input">
+                <label class="programe-choise-form__label" for="name">Имя:*</label>
+                <input id="name" type="text" placeholder="Барсик">
+                <label class="programe-choise-form__label" for="weight">Вес (кг):*</label>
+                <input id="weight" type="text" placeholder="7">
+                <label class="programe-choise-form__label" for="age">Возраст (лет):</label>
+                <input id="age" type="text" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="visually-hidden">Похудение Масса Совет</legend>
+              <div class="programe-choise-form__input">
+                <input id="slim" type="radio" name="radio" value="slim" checked>
+                <label class="programe-choise-form__label" for="slim">Похудение</label>
+                <input id="mass" type="radio" name="radio"  value="mass">
+                <label class="programe-choise-form__label" for="mass">Набор массы</label>
+                <input id="advice" type="radio" name="radio" value="advice">
+                <label class="programe-choise-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="programe-choise-form__legend">Контактные данные
+                                              (владельца кота)
+              </legend>
+              <div class="programe-choise-form__input">
+                <label class="programe-choise-form__label" for="email">E-mail:*</label>
+                <input id="email" type="email" placeholder="kuklachev@gmail.com">
+                <label class="programe-choise-form__label" for="tel">Телефон:*</label>
+                <input type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              </div>
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+                <legend class="programe-choise-form__legend">Комментарий</legend>
+                <textarea class="programe-choise-form__comment" cols="35" rows="15">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+            <fieldset class="programe-choise-form__fieldset">
+              <legend class="programe-choise-form__legend">Дополнительно</legend>
+              <div class="programe-choise-form__input">
+                  <input id="sugar" type="checkbox" checked>
+                  <label class="programe-choise-form__label" for="sugar">Сахарозаменитель</label>
+                  <input id="water" type="checkbox">
+                  <label class="programe-choise-form__label" for="water">Питьевая вода</label>
+                  <input id="milk" type="checkbox">
+                  <label class="programe-choise-form__label" for="milk">Молоко</label>
+                  <input id="vitamins" type="checkbox">
+                  <label class="programe-choise-form__label" for="vitamins">Витамины</label>
+              </div>
+            </fieldset>
+            <button class="programe-choise-form__order-botton" type="submit" value="отправить заявку">Отправить заявку</button>
+            <span class="programe-choise-form__commite">* — Обязательные поля</span>
+          </form>
+        <footer class="main-footer">
+            <h3 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h3>
+            <ul class="main-footer__list">
+              <li class="main-footer__item cooperation">приглашаем
+                                                                к сотрудничеству
+                                                                дилеров!
+              </li>
+              <li class="main-footer__item our-address">ул. Большая
+                                                                Конюшенная, д. 19/8
+                                                                Санкт-Петербург
+              </li>
+            </ul>
+            <iframe></iframe>
+            <div class="main-footer__title">
+              <img class="main-footer__title footer-title-image" src="http://placehold.it/150x100"  alt="магазин питания Кет энерджи">
+            </div>
+            <ul class="main-footer__social social">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#"> Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#"> Мы в Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"> Мы в Фейсбуке</a>
+              </li>
+            </ul>
+            <div class="main-footer__developed developed">
+              <a class="developed__link" href="#">HTML Academy</a>
+              <a class="developed__link developed-svg" href="#"><svg></svg></a>
+            </div>
+          </footer>
+        </main>
+  </body>
+</html>
