@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="http://placehold.it/150x100"  alt="функциональный корм для котов">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открывает Меню</button>
+        <input class="main-nav__toggle" type="image" src="img/mobile-menu.svg.png" alt="кнопка вызова меню">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list-item"><a class="site-list-link">Главная</a></li>
@@ -26,11 +27,13 @@
           <h1 class="food-promo__title-top">Функциональное питание для котов</h1>
           <span class="food-promo__title-bottom">Занялся собой? Займись котом!</span>
         </div>
-        <img class="food-promo__image" src="http://placehold.it/150x100" alt="Корм для котов PRO">
       </article>
       <section class="food-programe">
-        <h2 class="visually-hidden">Выбор программ по питанию для вашего кота</h2>
-        <a class="food-programe__link" href="form.html">Подобрать программу</a>
+        <article class="food-programe__logo">
+          <h2 class="visually-hidden">Выбор программ по питанию для вашего кота</h2>
+          <img class="food-programe__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="фото корма">
+          <a class="food-programe__link" href="form.html">Подобрать программу</a>
+        </article>
         <article class="food-programe__choice food-programe__choice-slim">
           <h3>Похудение</h3>
           <p>Ваш кот весит больше собаки и
@@ -117,6 +120,7 @@
           </div>
         </article>
       </section>
+      </main>
       <footer class="main-footer">
         <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
         <ul class="main-footer__list">
@@ -149,6 +153,5 @@
           <a class="developed__link developed-svg" href="#"><svg></svg></a>
         </div>
       </footer>
-    </main>
   </body>
 </html>
