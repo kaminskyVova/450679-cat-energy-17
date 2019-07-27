@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2"),
-       url("../../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+       url("../fonts/oswaldmedium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
   border: 1px solid red;
   margin-top: 30px;
 
-  font-family: "Oswald, Arial, sans-serif";
+  font-family: @fontOswald;
 }
 
 
@@ -37,7 +37,10 @@ body {
   overflow: hidden;
   }
 
-  a {
+a {
     text-decoration: none;
   }
 
+ul {
+  list-style: none;
+}
