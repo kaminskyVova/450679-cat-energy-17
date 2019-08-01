@@ -1,10 +1,15 @@
 
 .food-programe {
+  position: relative;
   .food-programe__logo {
     width: 280px;
     height: 313px;
     margin: 0 auto;
     border: @border-time;
+    position: absolute;
+    top: -330px;
+    left: 20px;
+    z-index: 3;
 
     .food-programe__link {
       display: block;
@@ -15,8 +20,10 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
+      text-transform: uppercase;
       background-color: #68b738;
       text-align: center;
+      padding-top: 10px;
     }
 
     }
@@ -27,28 +34,36 @@
       height: 266px;
       background-color: @backgroundSilver;
       margin: 20px;
+      padding: 20px;
 
     .food-programe__choice-title {
           color: #111111;
           font-size: 24px;
           font-weight: 400;
           line-height: 37.02px;
+          margin: 0;
+          margin-bottom: 20px;
         }
     .food-programe__choice-description {
+          width: 240px;
           font-family: Arial, Helvetica, sans-serif;
           color: #444444;
           font-weight: 400;
           line-height: 18px;
 
+          border-bottom: 1px solid #dadada;
+
           margin: 0;
-          padding: 0;
+          padding-bottom: 20px;
         }
     .food-programe__choice-link {
+          display: block;
           font-family: Oswald;
           color: #111111;
           font-size: 16px;
           font-weight: 400;
           line-height: 16px;
+          padding-top: 20px;
         }
       }
     }

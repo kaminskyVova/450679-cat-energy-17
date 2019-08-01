@@ -3,12 +3,25 @@
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-       url("../fonts/oswaldmedium.woff2") format("woff2");
+       url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   width: 320px;
@@ -19,7 +32,6 @@ body {
 
   font-family: @fontOswald;
 }
-
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -44,3 +56,25 @@ a {
 ul {
   list-style: none;
 }
+
+// кнопка заказать //
+
+.order-botton {
+  display: block;
+  width: 280px;
+  height: 40px;
+  background-color: green;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+///////////////////////////////

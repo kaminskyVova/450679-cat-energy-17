@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="http://placehold.it/150x100"  alt="функциональный корм для котов">
+        <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открывает Меню</button>
+        <div class="main-nav__toggle">
+          <span class="main-nav__toggle-line main-nav__toggle-line--first"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--second"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--third"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--fourth"></span>
+        </div>
         <div class="main-nav__wrapper">
-          <ul class="main-nav-list site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list-item"><a class="site-list-link" href="index.html">Главная</a></li>
-            <li class="site-list-item"><a class="site-list-link">Каталог продукции</a></li>
+            <li class="site-list-item"><a class="site-list-link" >Каталог продукции</a></li>
             <li class="site-list-item"><a class="site-list-link" href="form.html">Подбор программы</a></li>
           </ul>
         </div>
@@ -27,48 +31,44 @@
       <section class="products">
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-1-mobile.jpg" width="140" height="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               PRO 500 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">500 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Курица</span>
+                <span class="products-card__category">Цена</span>
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">500 г</span>
+                <span class="products-card__value">Курица</span>
                 <span class="products-card__value">700 Р.</span>
               </li>
             </ul>
           </div>
-          <a class="products-card__link order-botton" href="#">Заказать</a>
+          <a class="products-card__botton order-botton" href="#">Заказать</a>
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-2-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                                PRO 1000 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">1000 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Курица</span>
+                <span class="products-card__category">Цена</span>
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">1000 г</span>
+                <span class="products-card__value">Курица</span>
                 <span class="products-card__value">1000 Р.</span>
               </li>
             </ul>
@@ -77,23 +77,21 @@
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-3-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               PRO 500 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">500 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Рыба</span>
+                <span class="products-card__category">Цена</span>
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">500 г</span>
+                <span class="products-card__value">Рыба</span>
                 <span class="products-card__value">700 Р.</span>
               </li>
             </ul>
@@ -102,23 +100,21 @@
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-4-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               PRO 1000 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">1000 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Рыба</span>
+                <span class="products-card__category">Цена</span>
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">1000 г</span>
+                <span class="products-card__value">Рыба</span>
                 <span class="products-card__value">1000 Р.</span>
               </li>
             </ul>
@@ -127,23 +123,22 @@
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-5-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               Slim 500 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">500 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Гречка</span>
+                <span class="products-card__category">Цена</span>
+
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">500 г</span>
+                <span class="products-card__value">Гречка</span>
                 <span class="products-card__value">400 Р.</span>
               </li>
             </ul>
@@ -152,23 +147,22 @@
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-6-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               Slim 1000 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">500 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Гречка</span>
+                <span class="products-card__category">Цена</span>
+
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">500 г</span>
+                <span class="products-card__value">Гречка</span>
                 <span class="products-card__value">500 Р.</span>
               </li>
             </ul>
@@ -177,23 +171,22 @@
         </article>
         <article class="products-card">
           <a class="products-card__link products-card__link--image" href="#">
-            <img class="products-card__image" src="http://placehold.it/150x100" alt="фото упаквки корма">
+            <img class="products-card__image" src="img/catalog-7-mobile.jpg" width="144" alt="фото упаквки корма">
           </a>
           <div class="products-card__wraper">
-            <a class="products-card__link products-card__link--title" href="#">Cat Energy
+            <a class="products-card__link products-card__link--title" href="#">Cat Energy<br>
                                                                               Slim 500 г
             </a>
             <ul class="products-card__list">
               <li class="products-card__item">
                 <span class="products-card__category">Объем</span>
-                <span class="products-card__value">500 г</span>
-              </li>
-              <li class="products-card__item">
                 <span class="products-card__category">Вкус</span>
-                <span class="products-card__value">Рис</span>
+                <span class="products-card__category">Цена</span>
+
               </li>
               <li class="products-card__item">
-                <span class="products-card__category">Цена</span>
+                <span class="products-card__value">500 г</span>
+                <span class="products-card__value">Рис</span>
                 <span class="products-card__value">500 Р.</span>
               </li>
             </ul>
@@ -203,24 +196,22 @@
       </section>
       <section class="show-all-products">
         <div class="show-all-products__inscription inscription">
-          <span class="inscription__image"></span>
+          <span class="inscription__image"><img class="inscription__image-image" src="img/plus-mobile.svg" width="30" alt="знак плюс"></span>
           <span class="inscription__title-show">Показать еще 100500 товаров</span>
           <span class="inscription__title-real">На самом деле вкусов гораздо больше!</span>
         </div>
         <a class="show-all-products__botton show-botton" href="#">Показать все</a>
       </section>
       <section class="additional">
-          <div class="additional-products">
-            <h2 class="additional-products__title">Дополнительные товары</h2>
-          </div>
-          <article class=" products-info">
-            <p class="products-info__name">Сахарозаменитель</p>
-            <ul class="products-info__list">
-              <li class="products-info__item">1 упаковка (100 г)</li>
-              <li class="products-info__item">200 Р.</li>
-            </ul>
-            <a class="products-info__link order-botton" href="#">Заказать</a>
-          </article>
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+        <article class=" products-info">
+          <p class="products-info__name">Сахарозаменитель</p>
+          <ul class="products-info__list">
+            <li class="products-info__item">1 упаковка (100 г)</li>
+            <li class="products-info__item">200 Р.</li>
+          </ul>
+          <a class="products-info__link order-botton" href="#">Заказать</a>
+        </article>
         <article class="products-info">
           <p class="products-info__name">Питьевая вода</p>
           <ul class="products-info__list">
@@ -245,47 +236,47 @@
           </ul>
           <a class="products-info__link order-botton" href="#">Заказать</a>
         </article>
+        <article class="marketing-action">
+          <h3 class="visually-hidden">Выгодная покупка!</h3>
+          <div class="marketing-action__info action-info">
+            <span class="action-info-image"><img  src="img/gift.svg" alt="подарок" width="55"></span>
+            <span class="action-info__title"><pre>Закажите все</pre>
+                                          <pre>и получите чехол для</pre>
+                                          <pre>кота в подарок!</pre>
+            </span>
+          </div>
+        </article>
       </section>
-      <article class="marketing-action">
-        <h3 class="visually-hidden">Выгодная покупка!</h3>
-        <div class="marketing-action__info action-info">
-          <svg class="action-info__image"></svg>
-          <span class="action-info__title">Закажите все
-                                          и получите чехол для
-                                          кота в подарок!
-          </span>
-        </div>
-      </article>
       <footer class="main-footer">
-        <h3 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h3>
+        <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
         <ul class="main-footer__list">
           <li class="main-footer__item cooperation">приглашаем
-                                                    к сотрудничеству
-                                                    дилеров!
+                                                      к сотрудничеству
+                                                      дилеров!
           </li>
           <li class="main-footer__item our-address">ул. Большая
-                                                    Конюшенная, д. 19/8
-                                                    Санкт-Петербург
+                                                      Конюшенная, д. 19/8
+                                                      Санкт-Петербург
           </li>
         </ul>
-        <iframe></iframe>
+        <iframe class="main-footer__map"></iframe>
         <div class="main-footer__title">
-          <img class="main-footer__title footer-title-image" src="http://placehold.it/150x100"  alt="магазин питания Кет энерджи">
+          <img class="main-footer__title footer-title-image" src="img/logo-footer.svg" width="120" alt="магазин питания Кет энерджи">
         </div>
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"> Мы в Вконтакте</a>
+            <a class="social__link" href="#"><img class="social__link--vkontakte" src="img/m-vk.svg" width="22" alt="иконка вк"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"> Мы в Инстаграм</a>
+            <a class="social__link" href="#"><img class="social__link--instagram" src="img/m-insta.svg" width="16" alt="иконка инстаграм"><span class="visually-hidden">Мы в Инстаграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"> Мы в Фейсбуке</a>
+            <a class="social__link" href="#"><img class="social__link--facebook" src="img/m-fb.svg" width="10" alt="иконка фейсбук"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
         <div class="main-footer__developed developed">
-          <a class="developed__link" href="#">HTML Academy</a>
-          <a class="developed__link developed-svg" href="#"><svg></svg></a>
+          <a class="developed__link developed__link-academy" href="#">HTML Academy</a>
+          <a class="developed__link developed__link-icon" href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="иконка академии"></a>
         </div>
       </footer>
     </main>

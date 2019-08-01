@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +11,12 @@
         <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
       </a>
       <nav class="main-nav">
-        <input class="main-nav__toggle" type="image" src="img/mobile-menu.svg.png" alt="кнопка вызова меню">
+        <div class="main-nav__toggle">
+          <span class="main-nav__toggle-line main-nav__toggle-line--first"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--second"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--third"></span>
+          <span class="main-nav__toggle-line main-nav__toggle-line--fourth"></span>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list-item"><a class="site-list-link">Главная</a></li>
@@ -25,7 +29,7 @@
     <main class="index-main">
       <article class="food-promo">
         <div class="food-promo__title">
-          <h1 class="food-promo__title-top">Функциональное питание для котов</h1>
+          <h1 class="food-promo__title-top"><span class="food-promo__title-top__first">Функциональное</span><br>питание для котов</h1>
           <span class="food-promo__title-bottom">Занялся собой? Займись котом!</span>
         </div>
       </article>
@@ -103,15 +107,15 @@
           </li>
           <li class="example__item">
             <span class="example__value">60 дней</span>
-            <span class="example__itemdefinition">затрачено
+            <span class="example__itemdefinition">затрачено</br>
                                                     времени
             </span>
           </li>
         </ul>
         <span class="example__costs">Затраты на питание: 15 000 руб.</span>
         <article class="example__slider">
-          <img class="example__slider-fat" src="http://placehold.it/150x100" alt="толстый кот">
-          <img class="example__slider-thin" src="http://placehold.it/150x100" alt="худой кот">
+          <img class="example__slider-fat" src="img/before-mobile@1x.png" alt="толстый кот">
+          <!--<img class="example__slider-thin" src="img/before-mobile@1x.png" alt="худой кот">-->
           <div class="example__slider-botton">
             <button class="example__slider-botton example__toggle">Было</button>
             <div class="example__slider-botton example__scale">
@@ -134,25 +138,26 @@
                                                       Санкт-Петербург
           </li>
         </ul>
-        <iframe></iframe>
+        <iframe class="main-footer__map"></iframe>
         <div class="main-footer__title">
-          <img class="main-footer__title footer-title-image" src="http://placehold.it/150x100"  alt="магазин питания Кет энерджи">
+          <img class="main-footer__title footer-title-image" src="img/logo-footer.svg" width="120" alt="магазин питания Кет энерджи">
         </div>
         <ul class="main-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"> Мы в Вконтакте</a>
+            <a class="social__link" href="#"><img class="social__link--vkontakte" src="img/m-vk.svg" width="22" alt="иконка вк"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"> Мы в Инстаграм</a>
+            <a class="social__link" href="#"><img class="social__link--instagram" src="img/m-insta.svg" width="16" alt="иконка инстаграм"><span class="visually-hidden">Мы в Инстаграм</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"> Мы в Фейсбуке</a>
+            <a class="social__link" href="#"><img class="social__link--facebook" src="img/m-fb.svg" width="10" alt="иконка фейсбук"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
         <div class="main-footer__developed developed">
-          <a class="developed__link" href="#">HTML Academy</a>
-          <a class="developed__link developed-svg" href="#"><svg></svg></a>
+          <a class="developed__link developed__link-academy" href="#">HTML Academy</a>
+          <a class="developed__link developed__link-icon" href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="иконка академии"></a>
         </div>
       </footer>
+      <script src="main.js"></script>
   </body>
 </html>

@@ -20,9 +20,112 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+    margin-bottom: 25px;
     }
 
   .example__list {
       list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+
+      .example__item {
+        position: relative;
+        width: 124px;
+        height: 56px;
+        border-radius: 3px;
+        border: 1px solid #cdcdcd;
+        margin-right: 20px;
+        text-align: center;
+
+          .example__value {
+            display: block;
+            color: #111111;
+            font-family: Oswald;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding-top: 15px;
+          }
+
+          .example__itemdefinition {
+            display: block;
+            width: 54px;
+            color: #444444;
+            font-family: "Arial" sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 12px;
+            background-color: #f2f2f2;
+
+            position: absolute;
+            left: 30px;
+            bottom: -15px;
+          }
+      }
+  }
+
+  .example__costs {
+    color: #111111;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0;
+    width: 270px;
+    padding-left: 45px;
+    margin-bottom: 35px;
   }
 }
+
+.example__slider {
+
+  .example__slider-fat {
+    margin-bottom: 20px;
+  }
+
+  .example__slider-botton {
+    width: 220px;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+
+      .example__toggle {
+        width: 36px;
+        height: 15px;
+        color: #111111;
+        font-family: Oswald;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+        border: 0;
+        background-color: #f2f2f2;
+      }
+
+      .example__scale {
+        box-sizing: border-box;
+        width: 84px;
+        height: 14px;
+        border-radius: 6px;
+        border: 1px solid #cdcdcd;
+        background-color: #ffffff;
+
+        .example__scale-green {
+          box-sizing: border-box;
+          width: 35px;
+          height: 6px;
+          border-radius: 3px;
+          background-color: #68b738;
+          margin: 0;
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
