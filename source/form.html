@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - Анкета для выбора программы питания </title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
       <header class="main-header">
           <a class="main-header__logo">
-            <img class="main-header__logo-image" src="http://placehold.it/150x100"  alt="функциональный корм для котов">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
           </a>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открывает Меню</button>
+            <div class="main-nav__toggle">
+              <span class="main-nav__toggle-line main-nav__toggle-line--first"></span>
+              <span class="main-nav__toggle-line main-nav__toggle-line--second"></span>
+              <span class="main-nav__toggle-line main-nav__toggle-line--third"></span>
+              <span class="main-nav__toggle-line main-nav__toggle-line--fourth"></span>
+            </div>
             <div class="main-nav__wrapper">
-              <ul class="main-nav-list site-list">
-                <li class="site-list-item"><a class="site-list-link" href="index.html">Главная</a></li>
-                <li class="site-list-item"><a class="site-list-link" href="catalog.html">Каталог продукции</a></li>
-                <li class="site-list-item"><a class="site-list-link">Подбор программы</a></li>
+              <ul class="main-nav__list site-list">
+                <li class="site-list-item"><a class="site-list-link" href="index.html">главная</a></li>
+                <li class="site-list-item"><a class="site-list-link" href="catalog.html">каталог продукции</a></li>
+                <li class="site-list-item"><a class="site-list-link">подбор программы</a></li>
               </ul>
             </div>
           </nav>
@@ -81,38 +85,38 @@
             <button class="programe-choise-form__order-botton" type="submit" value="отправить заявку">Отправить заявку</button>
             <span class="programe-choise-form__commite">* — Обязательные поля</span>
           </form>
-        <footer class="main-footer">
-            <h3 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h3>
-            <ul class="main-footer__list">
-              <li class="main-footer__item cooperation">приглашаем
-                                                                к сотрудничеству
-                                                                дилеров!
-              </li>
-              <li class="main-footer__item our-address">ул. Большая
-                                                                Конюшенная, д. 19/8
-                                                                Санкт-Петербург
-              </li>
-            </ul>
-            <iframe></iframe>
-            <div class="main-footer__title">
-              <img class="main-footer__title footer-title-image" src="http://placehold.it/150x100"  alt="магазин питания Кет энерджи">
-            </div>
-            <ul class="main-footer__social social">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#"> Мы в Вконтакте</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#"> Мы в Инстаграм</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"> Мы в Фейсбуке</a>
-              </li>
-            </ul>
-            <div class="main-footer__developed developed">
-              <a class="developed__link" href="#">HTML Academy</a>
-              <a class="developed__link developed-svg" href="#"><svg></svg></a>
-            </div>
-          </footer>
+          <footer class="main-footer">
+              <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
+              <ul class="main-footer__list">
+                <li class="main-footer__item cooperation">приглашаем
+                                                            к сотрудничеству
+                                                            дилеров!
+                </li>
+                <li class="main-footer__item our-address">ул. Большая
+                                                            Конюшенная, д. 19/8
+                                                            Санкт-Петербург
+                </li>
+              </ul>
+              <iframe class="main-footer__map"></iframe>
+              <div class="main-footer__title">
+                <img class="main-footer__title footer-title-image" src="img/logo-footer.svg" width="120" alt="магазин питания Кет энерджи">
+              </div>
+              <ul class="main-footer__social social">
+                <li class="social__item">
+                  <a class="social__link" href="#"><img class="social__link--vkontakte" src="img/m-vk.svg" width="22" alt="иконка вк"><span class="visually-hidden">Мы в Вконтакте</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#"><img class="social__link--instagram" src="img/m-insta.svg" width="16" alt="иконка инстаграм"><span class="visually-hidden">Мы в Инстаграм</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#"><img class="social__link--facebook" src="img/m-fb.svg" width="10" alt="иконка фейсбук"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+                </li>
+              </ul>
+              <div class="main-footer__developed developed">
+                <a class="developed__link developed__link-academy" href="#">HTML Academy</a>
+                <a class="developed__link developed__link-icon" href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="иконка академии"></a>
+              </div>
+            </footer>
         </main>
   </body>
 </html>
