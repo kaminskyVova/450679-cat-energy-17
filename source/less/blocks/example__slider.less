@@ -1,0 +1,127 @@
+
+
+
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+
+  &-img {
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    +label+.example__slider-img {
+
+      .after,
+      .before {
+        transition: opacity .3s;
+      }
+
+      .after {
+        opacity: 0;
+      }
+
+      .before {
+        opacity: 1;
+      }
+    }
+
+    &:checked {
+
+      +label {
+
+        +.example__slider-img {
+
+          .before {
+            opacity: 0;
+          }
+
+          .after {
+            opacity: 1;
+          }
+        }
+
+        .example__slider-botton {
+
+          .example__scale {
+
+            .example__scale-green {
+              left: 37px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.example__slider-fat {
+  margin-bottom: 20px;
+}
+
+.example__slider-botton {
+  width: 220px;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .example__toggle {
+    width: 36px;
+    height: 15px;
+    color: #111111;
+    font-family: @fontOswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.example__scale {
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  position: relative;
+
+  .example__scale-green {
+    box-sizing: border-box;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #68b738;
+    margin: 0 5px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 3px);
+    bottom: 0;
+    transition: left .3s;
+  }
+}

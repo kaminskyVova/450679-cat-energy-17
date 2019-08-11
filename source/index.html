@@ -11,11 +11,10 @@
         <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
       </a>
       <nav class="main-nav">
-        <div class="main-nav__toggle">
-          <span class="main-nav__toggle-line main-nav__toggle-line--first"></span>
-          <span class="main-nav__toggle-line main-nav__toggle-line--second"></span>
-          <span class="main-nav__toggle-line main-nav__toggle-line--third"></span>
-          <span class="main-nav__toggle-line main-nav__toggle-line--fourth"></span>
+        <div class="main-nav__toggle" id="hamburger"  onclick="myFunction()">
+          <span class="main-nav__toggle-first"></span>
+          <span class="main-nav__toggle-second"></span>
+          <span class="main-nav__toggle-third"></span>
         </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -40,7 +39,10 @@
           <a class="food-programe__link" href="form.html">Подобрать программу</a>
         </article>
         <article class="food-programe__choice food-programe__choice-slim">
-          <h3 class="food-programe__choice-title">похудение</h3>
+          <div class="food-programe__choice-title-image">
+            <h3 class="food-programe__choice-title food-programe__choice-title-slim">похудение</h3>
+            <span class="food-programe__choise-image"><img src="img/Vector_Smart_Object.svg" width="35" alt="кошка"></span>
+          </div>
           <p class="food-programe__choice-description">Ваш кот весит больше собаки и
             почти утратил способность лазить
             по деревьям? Пора на диету! Cat
@@ -50,7 +52,10 @@
           <a class="food-programe__choice-link" href="catalog.html">каталог slim</a>
         </article>
         <article class="food-programe__choice food-programe__choice-pro">
-          <h3 class="food-programe__choice-title">набор массы</h3>
+          <div class="food-programe__choice-title-image-pro">
+            <h3 class="food-programe__choice-title food-programe__choice-title-pro">набор массы</h3>
+            <span class="food-programe__choise-image-pro"><img src="img/Vector_Smart_Object_copy_2.svg" width="67" alt="пантера"></span>
+          </div>
           <p class="food-programe__choice-description">Заработать авторитет среди
             дворовых котов и даже собак?
             Серия Cat Energy Pro поможет
@@ -64,24 +69,28 @@
         <h3 class="how-to-use__title">Как это работает</h3>
         <ul class="how-to-use__list">
           <li class="how-to-use__item how-to-use__item-health">
+            <span class="how-to-use__item-image"><img src="img/advantage-leaf@1x.png" width="26" alt="лист"></span>
             <p class="how-to-use__item-description">Функциональное питание
                                                     содержит только полезные
                                                     питательные вещества.
             </p>
           </li>
           <li class="how-to-use__item how-to-use__item-powder">
+            <span class="how-to-use__item-image"><img src="img/advantage-powder@1x.png" width="29" alt="порошок"></span>
               <p class="how-to-use__item-description">Выпускается в виде порошка,
                                                       который нужно лишь залить
                                                       кипятком и готово.
               </p>
           </li>
           <li class="how-to-use__item how-to-use__item-saving">
+              <span class="how-to-use__item-image"><img src="img/advantage-dining@1x.png" width="23" alt="посуда"></span>
             <p class="how-to-use__item-description">Замените один-два приема
                                                     обычной еды на наше
                                                     функциональное питание.
             </p>
           </li>
           <li class="how-to-use__item how-to-use__item-time">
+            <span class="how-to-use__item-image"><img src="img/advantage-clock@1x.png" width="26" alt="часы"></span>
               <p class="how-to-use__item-description">Уже через месяц
                                                       наслаждайтесь изменениями
                                                       к лучшему вашего питомца!
@@ -114,20 +123,26 @@
         </ul>
         <span class="example__costs">Затраты на питание: 15 000 руб.</span>
         <article class="example__slider">
-          <img class="example__slider-fat" src="img/before-mobile@1x.png" alt="толстый кот">
-          <div class="example__slider-botton">
-            <button class="example__slider-botton example__toggle">Было</button>
-            <div class="example__slider-botton example__scale">
-              <div class="example__slider-botton example__scale-green"></div>
+            <input type="checkbox" name="example_toggle" id="example_toggle">
+            <label for="example_toggle">
+              <div class="example__slider-botton">
+                <div class="example__slider-botton example__toggle">Было</div>
+                <div class="example__slider-botton example__scale">
+                  <div class="example__slider-botton example__scale-green"></div>
+                </div>
+                <div class="example__slider-botton example__toggle">Стало</div>
+              </div>
+            </label>
+            <div class="example__slider-img">
+              <img class="example__slider-fat before" src="img/before-mobile@1x.png" alt="толстый кот">
+              <img class="example__slider-slim after" src="img/after-mobile@1x.png" alt="худой кот">
             </div>
-            <button class="example__slider-botton example__toggle">Стало</button>
-          </div>
-        </article>
+          </article>
       </section>
       </main>
       <footer class="main-footer">
         <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
-        <ul class="main-footer__list">
+        <ul class="main-footer__list main-footer__index-list">
           <li class="main-footer__item cooperation">приглашаем
                                                       к сотрудничеству
                                                       дилеров!
@@ -157,6 +172,6 @@
           <a class="developed__link developed__link-icon" href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="иконка академии"></a>
         </div>
       </footer>
-      <script src="main.js"></script>
+      <script src="js/main.js"></script>
   </body>
 </html>

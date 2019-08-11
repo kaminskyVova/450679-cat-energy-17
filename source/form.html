@@ -11,11 +11,10 @@
             <img class="main-header__logo-image" src="img/logo-mobile.svg"  alt="функциональный корм для котов">
         </a>
         <nav class="main-nav">
-          <div class="main-nav__toggle">
-            <span class="main-nav__toggle-line main-nav__toggle-line--first"></span>
-            <span class="main-nav__toggle-line main-nav__toggle-line--second"></span>
-            <span class="main-nav__toggle-line main-nav__toggle-line--third"></span>
-              <span class="main-nav__toggle-line main-nav__toggle-line--fourth"></span>
+          <div class="main-nav__toggle" id="hamburger"  onclick="myFunction()">
+            <span class="main-nav__toggle-first"></span>
+            <span class="main-nav__toggle-second"></span>
+            <span class="main-nav__toggle-third"></span>
           </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -49,19 +48,19 @@
           <fieldset class="programe-choise-form__fieldset">
             <legend class="visually-hidden">Похудение Масса Совет</legend>
             <div class="programe-choise-form__input programe-choise-form__input-radio">
-              <label class="programe-choise-form__label programe-choise-form__radio" for="slim">
-                <span class="programe-choise-form__label-style"></span>
-                <input class="input-radio" id="slim" type="radio" name="radio" value="slim" checked>ПОХУДЕНИЕ
-              </label>
-              <label class="programe-choise-form__label programe-choise-form__radio" for="mass">
-                <span class="programe-choise-form__label-style"></span>
-                <input class="input-radio" id="mass" type="radio" name="radio"  value="mass">НАБОР МАССЫ
-              </label>
-              <label class="programe-choise-form__label programe-choise-form__radio" for="advice">
-                <span class="programe-choise-form__label-style"></span>
-                <input class="input-radio" id="advice" type="radio" name="radio" value="advice">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
-              </label>
-            </div>
+                <label class="programe-choise-form__label programe-choise-form__radio" for="slim">
+                  <input class="input-radio" id="slim" type="radio" name="radio" value="slim" checked>ПОХУДЕНИЕ
+                  <span class="programe-choise-form__label-style"></span>
+                </label>
+                <label class="programe-choise-form__label programe-choise-form__radio" for="mass">
+                  <input class="input-radio" id="mass" type="radio" name="radio"  value="mass">НАБОР МАССЫ
+                  <span class="programe-choise-form__label-style"></span>
+                </label>
+                <label class="programe-choise-form__label programe-choise-form__radio" for="advice">
+                  <input class="input-radio" id="advice" type="radio" name="radio" value="advice">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+                  <span class="programe-choise-form__label-style"></span>
+                </label>
+              </div>
           </fieldset>
           <fieldset class="programe-choise-form__fieldset">
             <legend class="visually-hidden">
@@ -86,23 +85,27 @@
             <legend class="visually-hidden">Дополнительно</legend>
             <h2 class="programe-choise-form__title-second">Дополнительно</h2>
             <div class="programe-choise-form__input-checkbox">
-              <label class="programe-choise-form__label" for="sugar">
-                <input id="sugar" type="checkbox" checked>
-                  САХАРОЗАМЕНИТЕЛЬ
-              </label>
-              <label class="programe-choise-form__label" for="water">
-                <input id="water" type="checkbox">
-                  ПИТЬЕВАЯ ВОДА
-              </label>
-              <label class="programe-choise-form__label" for="milk">
-                <input id="milk" type="checkbox">
-                  МОЛОКО
-              </label>
-              <label class="programe-choise-form__label" for="vitamins">
-                <input id="vitamins" type="checkbox">
-                  ВИТАМИНЫ
-              </label>
-            </div>
+                <label class="programe-choise-form__label programe-choise-form__checkbox" for="sugar">
+                  <input id="sugar" class="input-checkbox" type="checkbox" checked>
+                    САХАРОЗАМЕНИТЕЛЬ
+                    <span class="programe-choise-form__checkbox-style"></span>
+                </label>
+                <label class="programe-choise-form__label programe-choise-form__checkbox" for="water">
+                  <input id="water" class="input-checkbox" type="checkbox">
+                    ПИТЬЕВАЯ ВОДА
+                    <span class="programe-choise-form__checkbox-style"></span>
+                </label>
+                <label class="programe-choise-form__label programe-choise-form__checkbox" for="milk">
+                  <input id="milk" class="input-checkbox" type="checkbox">
+                    МОЛОКО
+                    <span class="programe-choise-form__checkbox-style"></span>
+                </label>
+                <label class="programe-choise-form__label programe-choise-form__checkbox" for="vitamins">
+                  <input id="vitamins" class="input-checkbox" type="checkbox">
+                    ВИТАМИНЫ
+                    <span class="programe-choise-form__checkbox-style"></span>
+                </label>
+              </div>
           </fieldset>
           <div class="programe-choise-form__botton">
             <button class="programe-choise-form__botton-botton order-botton" type="submit" value="отправить заявку">Отправить заявку</button>
@@ -142,5 +145,6 @@
           <a class="developed__link developed__link-icon" href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="иконка академии"></a>
         </div>
       </footer>
+      <script src="js/main.js"></script>
   </body>
 </html>
