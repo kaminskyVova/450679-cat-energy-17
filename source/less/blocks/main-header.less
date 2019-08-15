@@ -1,12 +1,12 @@
 
+  .main-header {
 
-.main-header {
-  border: @border-time;
-
-  box-sizing: border-box;
-  position: relative;
-  width: 320px;
-  background: #ffffff;
+    border: @border-time;
+    width: 320px;
+    box-sizing: border-box;
+    position: relative;
+    min-width: 320px;
+    background: #ffffff;
 
     .main-header__logo {
       display: block;
@@ -16,5 +16,12 @@
       padding-top: 11px;
       padding-bottom: 16px;
 
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .main-header {
+      width: 540px;
+      background: red;
     }
   }
