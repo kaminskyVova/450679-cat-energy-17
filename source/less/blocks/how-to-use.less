@@ -32,7 +32,6 @@
 }
 
 
-
 .how-to-use__item {
   display: flex;
   justify-content: space-around;
@@ -49,11 +48,88 @@
 
     .how-to-use__item-description {
       margin: 0;
+      width: 200px;
+    }
+
+    .how-to-use__item-number {
+      display: none;
     }
   }
 
 .how-to-use__item-image {
   img {
-    padding-top: 15px;
+    padding-top: 13px;
+    width: 55px;
+    height: 60px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .how-to-use {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .how-to-use__title {
+    color: #111111;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .how-to-use__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .how-to-use__item {
+    display: block;
+    width: 290px;
+    height: 290px;
+    position: relative;
+
+    .how-to-use__item-description {
+      width: 230px;
+      color: #444444;
+      font-family: @fontArial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .how-to-use__item-description:last-child {
+      width: 250px;
+    }
+
+    .how-to-use__item-image {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 37px;
+    }
+  }
+
+  .how-to-use__item:nth-child(1),
+  .how-to-use__item:nth-child(3) {
+    margin-right: 70px;
+  }
+
+
+  .how-to-use__item {
+
+    .how-to-use__item-number {
+      display: block;
+      color: #f2f2f2;
+      font-family: @fontOswald;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281.07px;
+
+      position: absolute;
+      top: -40px;
+      right: 60px;
+      z-index: -30;
+    }
   }
 }

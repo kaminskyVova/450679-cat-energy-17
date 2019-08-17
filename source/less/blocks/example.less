@@ -1,11 +1,8 @@
-
 .example {
   border: @border-time;
 
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  padding: 20px;
-
+  background: #f2f2f2;
 
   .example__title {
     font-family: @fontOswald;
@@ -13,7 +10,7 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 60px;
-    }
+  }
 
   .example__description {
     font-family: @fontArial;
@@ -22,9 +19,8 @@
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 25px;
-    }
-
   }
+}
 
 
 .example__list {
@@ -45,33 +41,32 @@
   margin-right: 20px;
   text-align: center;
 
-    .example__value {
-      display: block;
-      color: #111111;
-      font-family: @fontOswald;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding-top: 15px;
-    }
+  .example__value {
+    display: block;
+    color: #111111;
+    font-family: @fontOswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
 
-    .example__itemdefinition {
-      display: block;
-      width: 54px;
-      color: #444444;
-      font-family: @fontArial;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 12px;
-      background-color: #f2f2f2;
+  .example__itemdefinition {
+    display: block;
+    width: 54px;
+    color: #444444;
+    font-family: @fontArial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    background-color: #f2f2f2;
 
-      position: absolute;
-      left: 30px;
-      bottom: -15px;
-    }
+    position: absolute;
+    left: 30px;
+    bottom: -15px;
+  }
 }
-
 
 .example__costs {
   color: #111111;
@@ -86,4 +81,94 @@
   width: 270px;
   padding-left: 45px;
   margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .example {
+    box-sizing: border-box;
+    width: 768px;
+    padding: 0; //// не могу убрать padding ////
+    position: relative;
+  }
+
+  .example__heading {
+    background-color: #ffffff;
+    height: 625px;
+    padding: 30px;
+
+    .example__title {
+      margin: 0;
+      padding-top: 50px;
+      height: 173px;
+      background-color: #ffffff;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+
+    .example__description {
+      background-color: #ffffff;
+      margin: 0;
+      width: 610px;
+      height: 90px;
+    }
+
+    .example__list {
+      li {
+        margin-right: 40px;
+      }
+
+      .example__item {
+        width: 160px;
+        height: 72px;
+        box-sizing: border-box;
+
+        span {
+          width: 115px;
+          height: 15px;
+          text-align: center;
+          background-color: #ffffff;
+          bottom: -8px;
+          left: 18px;
+        }
+      }
+
+      .example__value {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 37.02px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding-left: 30px;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .example__benefit {
+    display: flex;
+    justify-content: space-between;
+
+    .example__costs {
+      width: 180px;
+      padding: 0;
+      padding-top: 10px;
+      color: #111111;
+      font-family: @fontOswald;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .example__background {             ///// фон под слайдером до footer ////
+    width: 768px;
+    height: 462px;
+    background-color: #f2f2f2;
+    position: relative;
+  }
 }

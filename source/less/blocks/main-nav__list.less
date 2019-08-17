@@ -1,8 +1,6 @@
-
-
 .main-nav__wrapper {
-  max-height: 0;
-  /*display: none;*/
+  // max-height: 0;
+  display: none;
   overflow: hidden;
   transition: max-height .3s;
 
@@ -31,5 +29,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    display: flex;
+  }
 
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
 
+    .site-list-item {
+      margin-right: 5px;
+    }
+  }
+}

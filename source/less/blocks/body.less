@@ -20,9 +20,8 @@
 }
 
 
-
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
   margin: 0 auto;
@@ -34,20 +33,23 @@ body {
 }
 
 
-@media screen and (min-width: 768px) {
+ @media  (min-width: 768px) {
   body {
     width: auto;
-    padding: 0 64px;
+    margin: 0 auto;
+    //padding: 0 30px;
+    margin-top: 20px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media  (min-width: 1300px) {
   body {
-    width: 940px;
-    padding: 0 120px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 60px;
+    margin-top: 20px;
   }
 }
-
 
     img {
       width: 100%;
@@ -91,6 +93,7 @@ body {
       padding-top: 10px;
       margin: 0 auto;
       margin-bottom: 20px;
+      cursor: pointer;
 
       color: #ffffff;
       font-family: Oswald;

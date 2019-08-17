@@ -1,37 +1,212 @@
-
 .food-programe {
   box-sizing: border-box;
   position: relative;
+}
 
-  .food-programe__logo {
-    width: 280px;
-    height: 313px;
+@media (min-width: 768px) {
+
+  .food-programe {
+    position: inherit;
     margin: 0 auto;
-    border: @border-time;
-    position: absolute;
-    top: -330px;
-    left: 20px;
-    z-index: 3;
   }
 }
 
-.food-programe__link {
-  display: block;
-  width: 100%;
-  height: 40px;
-  color: #ffffff;
+
+//////////////////////////////
+
+.food-programe__logo {
+  width: 280px;
+  height: 313px;
+  margin: 0 auto;
+  border: @border-time;
+  position: absolute;
+  top: -330px;
+  left: 20px;
+  z-index: 3;
+
+  .food-programe__link {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    font-family: @fontOswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #68b738;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .food-programe__logo {
+    width: 570px;
+    //height: 550px;
+    margin: 0 auto;
+    border: @border-time;
+    position: absolute; // картинка с коробкой позиционируется относительно body а я хотел изменить
+    top: 325px;
+    left: 100px;
+    z-index: 3;
+
+    .food-programe__link {
+      width: 246px;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      z-index: 6;
+    }
+  }
+}
+
+////////////////////////////////////////////////////
+
+
+// общий стиль для food-programe__choice-slim food-programe__choice-pro /////////////////
+
+.food-programe__choice {
+  border: @border-time;
+
+  box-sizing: border-box;
   font-family: @fontOswald;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: #68b738;
-  text-align: center;
-  padding-top: 10px;
+  width: 280px;
+  height: 266px;
+  margin: 0 auto;
+  background-color: @backgroundSilver;
+  margin: 20px;
+  padding: 20px;
+
+
+  .food-programe__choice-description {
+    width: 240px;
+    font-family: @fontArial;
+    color: #444444;
+    font-weight: 400;
+    line-height: 18px;
+
+    border-bottom: 1px solid #dadada;
+
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .food-programe__choice-link {
+    display: block;
+    font-family: @fontOswald;
+    text-transform: uppercase;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 20px;
+  }
+}
+
+///////////////////////////////////////////////////
+
+.food-programe__choice-title-image {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+
+  .food-programe__choice-title-slim {
+    text-transform: uppercase;
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37.02px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    padding-right: 60px;
+    margin-left: 20px;
+  }
+
+  .food-programe__choise-image {
+    display: block;
+    width: 50px;
+    height: 51px;
+    background-color: #68b738;
+    border-radius: 50%;
+    padding-right: 40px;
+  }
+}
+
+.food-programe__choise-image {
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: 5px;
+    top: -2px;
+  }
 }
 
 
+//////////////////////////////////////////////////////
 
+@media (min-width: 768px) {
 
+  .food-programe__choice {
+    width: 708px;
+    //height: 372px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    padding-top: 50px;
+  }
 
+  /////food-programe__choice-slim////
 
+  .food-programe__choice-title-image {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+
+    .food-programe__choice-title-slim {
+      margin-left: 0;
+    }
+
+    .food-programe__choise-image {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+    }
+  }
+
+  .food-programe__choice {
+
+    .food-programe__choice-description {
+      width: 371px;
+      border-bottom: none;
+    }
+  }
+
+  //////////// food-programe__choice-pro //////
+
+  .food-programe__choice {
+
+    .food-programe__choice-title-image-pro {
+      display: block;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .food-programe__choice-title-pro {
+      margin-left: 0;
+    }
+
+    .food-programe__choise-image-pro {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+
+      svg {
+        width: 100px;
+      }
+    }
+  }
+}

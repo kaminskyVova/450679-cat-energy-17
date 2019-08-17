@@ -61,7 +61,15 @@
   }
 
   +.main-nav__wrapper {
-    max-height: 400px;
-    /*display: block;*/
+    //max-height: 400px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    &__toggle {
+      display: none;
+    }
   }
 }
