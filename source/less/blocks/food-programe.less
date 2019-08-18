@@ -11,60 +11,6 @@
   }
 }
 
-
-//////////////////////////////
-
-.food-programe__logo {
-  width: 280px;
-  height: 313px;
-  margin: 0 auto;
-  border: @border-time;
-  position: absolute;
-  top: -330px;
-  left: 20px;
-  z-index: 3;
-
-  .food-programe__link {
-    display: block;
-    width: 100%;
-    height: 40px;
-    color: #ffffff;
-    font-family: @fontOswald;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    background-color: #68b738;
-    text-align: center;
-    padding-top: 10px;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .food-programe__logo {
-    width: 570px;
-    //height: 550px;
-    margin: 0 auto;
-    border: @border-time;
-    position: absolute; // картинка с коробкой позиционируется относительно body а я хотел изменить
-    top: 325px;
-    left: 100px;
-    z-index: 3;
-
-    .food-programe__link {
-      width: 246px;
-      position: absolute;
-      top: 35px;
-      left: 0;
-      z-index: 6;
-    }
-  }
-}
-
-////////////////////////////////////////////////////
-
-
 // общий стиль для food-programe__choice-slim food-programe__choice-pro /////////////////
 
 .food-programe__choice {
@@ -142,6 +88,50 @@
     position: absolute;
     left: 5px;
     top: -2px;
+  }
+}
+
+//////////////////////////////////////////////////////
+
+
+.food-programe__choice-title-image-pro {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+
+
+  .food-programe__choice-title-pro {
+    text-transform: uppercase;
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37.02px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    padding-bottom: 3px;
+    margin-left: 20px;
+  }
+
+  .food-programe__choise-image-pro {
+    display: block;
+    width: 50px;
+    height: 51px;
+    background-color: #68b738;
+    border-radius: 50%;
+    padding-right: 40px;
+  }
+}
+
+
+
+.food-programe__choise-image-pro {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: -9px;
+    top: 11px;
   }
 }
 
