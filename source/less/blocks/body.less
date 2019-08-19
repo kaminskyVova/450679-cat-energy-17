@@ -33,7 +33,7 @@ body {
 }
 
 
- @media  (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     width: auto;
     margin: 0 auto;
@@ -42,7 +42,7 @@ body {
   }
 }
 
-@media  (min-width: 1300px) {
+@media (min-width: 1300px) {
   body {
     width: auto;
     margin: 0 auto;
@@ -51,56 +51,64 @@ body {
   }
 }
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+img {
+  width: 100%;
+  height: auto;
+}
 
 
 
-    .visually-hidden:not(:focus):not(:active) {
-      position: absolute;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
 
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-      white-space: nowrap;
+  white-space: nowrap;
 
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-    a {
-      text-decoration: none;
-    }
+a {
+  text-decoration: none;
+}
 
-    ul {
-      list-style: none;
-    }
+ul {
+  list-style: none;
+}
 
-    // кнопка заказать //
+// кнопка заказать //
 
-    .order-botton {
-      display: block;
-      width: 280px;
-      height: 40px;
-      background-color: green;
-      text-align: center;
-      padding-top: 10px;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      cursor: pointer;
+.order-button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  background-color: green;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
 
-      color: #ffffff;
-      font-family: Oswald;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-    ///////////////////////////////
+@media (min-width: 768px) {
+
+  .order-button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+///////////////////////////////

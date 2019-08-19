@@ -74,16 +74,16 @@
       </svg>
     </a>
     <nav class="main-nav">
-      <div class="main-nav__toggle" id="hamburger" onclick="myFunction()">
+      <div class="main-nav__toggle main-nav__toggle--active" id="hamburger" onclick="myFunction()">
         <span class="main-nav__toggle-first"></span>
         <span class="main-nav__toggle-second"></span>
         <span class="main-nav__toggle-third"></span>
       </div>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list-item"><a class="site-list-link">главная</a></li>
-          <li class="site-list-item"><a class="site-list-link" href="catalog.html">каталог продукции</a></li>
-          <li class="site-list-item"><a class="site-list-link" href="form.html">подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list--item"><a class="main-nav__list--link">главная</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="catalog.html">каталог продукции</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="form.html">подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -92,14 +92,14 @@
   <main class="index-main">
     <article class="food-promo">
       <div class="food-promo__title">
-        <h1 class="food-promo__title-top"><span class="food-promo__title-top__first">Функциональное</span><br>питание
+        <h1 class="food-promo__title-top">Функциональное<br>питание
           для котов</h1>
         <span class="food-promo__title-bottom">Занялся собой? Займись котом!</span>
       </div>
-      <div class="food-programe__logo">
+      <div class="food-promo__logo">
         <h2 class="visually-hidden">Выбор программ по питанию для вашего кота</h2>
-        <img class="food-programe__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="фото корма">
-        <a class="food-programe__link" href="form.html">Подобрать программу</a>
+        <img class="foodpromo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="фото корма">
+        <a class="food-promo__link" href="form.html">Подобрать программу</a>
       </div>
     </article>
 
@@ -251,12 +251,12 @@
       <article class="example__slider">
         <input type="checkbox" name="example_toggle" id="example_toggle">
         <label for="example_toggle">
-          <div class="example__slider-botton">
-            <div class="example__slider-botton example__toggle">Было</div>
-            <div class="example__slider-botton example__scale">
-              <div class="example__slider-botton example__scale-green"></div>
+          <div class="example__slider-button">
+            <div class="example__slider-button example__toggle">Было</div>
+            <div class="example__slider-button example__scale">
+              <div class="example__slider-button example__scale-green"></div>
             </div>
-            <div class="example__slider-botton example__toggle">Стало</div>
+            <div class="example__slider-button example__toggle">Стало</div>
           </div>
         </label>
         <div class="example__slider-img">
@@ -269,11 +269,11 @@
     <footer class="main-footer">
       <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
       <ul class="main-footer__list main-footer__index-list">
-        <li class="main-footer__item cooperation">приглашаем
+        <li class="main-footer__item main-footer__cooperation">приглашаем
           к сотрудничеству
           дилеров!
         </li>
-        <li class="main-footer__item our-address">ул. Большая
+        <li class="main-footer__item main-footer__our-address">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
         </li>

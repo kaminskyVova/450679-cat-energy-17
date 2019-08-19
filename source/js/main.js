@@ -2,5 +2,5 @@
 
 function myFunction(){
   var element = document.getElementById("hamburger");
-  element.classList.toggle("active");
+  element.classList.toggle("main-nav__toggle--active");
 }

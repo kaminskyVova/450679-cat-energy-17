@@ -1,4 +1,3 @@
-
 .how-to-use {
   border: @border-time;
 
@@ -36,25 +35,26 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+}
 
-    .how-to-use__item-image {
-      display: block;
-      width: 160px;
-      height: 60px;
-      background-color: #68b738;
-      text-align: center;
-      margin-right: 20px;
-    }
+.how-to-use__item-image {
+  display: block;
+  width: 160px;
+  height: 60px;
+  background-color: #68b738;
+  text-align: center;
+  margin-right: 20px;
+}
 
-    .how-to-use__item-description {
-      margin: 0;
-      width: 200px;
-    }
+.how-to-use__item-description {
+  margin: 0;
+  width: 200px;
+}
 
-    .how-to-use__item-number {
-      display: none;
-    }
-  }
+.how-to-use__item-number {
+  display: none;
+}
+
 
 .how-to-use__item-image {
   img {
@@ -89,26 +89,27 @@
     width: 290px;
     height: 290px;
     position: relative;
-
-    .how-to-use__item-description {
-      width: 230px;
-      color: #444444;
-      font-family: @fontArial;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-    }
-
-    .how-to-use__item-description:last-child {
-      width: 250px;
-    }
-
-    .how-to-use__item-image {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 37px;
-    }
   }
+
+  .how-to-use__item-description {
+    width: 230px;
+    color: #444444;
+    font-family: @fontArial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .how-to-use__item-description:last-child {
+    width: 250px;
+  }
+
+  .how-to-use__item-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 37px;
+  }
+
 
   .how-to-use__item:nth-child(1),
   .how-to-use__item:nth-child(3) {
@@ -116,20 +117,17 @@
   }
 
 
-  .how-to-use__item {
+  .how-to-use__item-number {
+    display: block;
+    color: #f2f2f2;
+    font-family: @fontOswald;
+    font-size: 281px;
+    font-weight: 400;
+    line-height: 281.07px;
 
-    .how-to-use__item-number {
-      display: block;
-      color: #f2f2f2;
-      font-family: @fontOswald;
-      font-size: 281px;
-      font-weight: 400;
-      line-height: 281.07px;
-
-      position: absolute;
-      top: -40px;
-      right: 60px;
-      z-index: -30;
-    }
+    position: absolute;
+    top: -40px;
+    right: 60px;
+    z-index: -30;
   }
 }

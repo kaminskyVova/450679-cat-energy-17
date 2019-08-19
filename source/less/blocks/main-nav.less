@@ -1,46 +1,75 @@
-
-
-
 .main-nav {
   box-sizing: border-box;
+}
 
-  &__toggle {
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
+.main-nav__toggle {
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 40px;
+  z-index: 3;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
     position: absolute;
-    top: 18px;
-    right: 40px;
-    z-index: 3;
-
-    span {
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #000;
-      position: absolute;
-      left: 0;
-      right: 0;
-      transition: top 0.3s ease 0.1s, bottom 0.3s ease 0.1s, transform 0.3s, opacity 0.3s;
-    }
-
-    &-first {
-      top: 0;
-    }
-
-    &-second {
-      top: calc(50% - 1px);
-    }
-
-    &-third {
-      bottom: 0;
-    }
+    left: 0;
+    right: 0;
+    transition: top 0.3s ease 0.1s, bottom 0.3s ease 0.1s, transform 0.3s, opacity 0.3s;
   }
 }
 
+.main-nav__toggle-first {
+  top: 0;
+}
+
+.main-nav__toggle-second {
+  top: calc(50% - 1px);
+}
+
+.main-nav__toggle-third {
+  bottom: 0;
+}
+
+
+.main-nav__wrapper {
+  display: none;
+  overflow: hidden;
+  transition: max-height .3s;
+}
+
+.main-nav__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list--item {
+  height: 65px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__list--link{
+  display: block;
+  padding-top: 20px;
+  color: #111111;
+  font-family: @fontOswald;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+
+
 ///// js /////
 
-.main-nav__toggle.active.active {
+.main-nav__toggle--active {
 
   span {
     transition: top 0.3s, bottom 0.3s, transform 0.3s ease 0.1s, opacity 0.3s;
@@ -61,15 +90,27 @@
   }
 
   +.main-nav__wrapper {
-    //max-height: 400px;
     display: block;
   }
 }
+//////////////////////////////////////////////////
+
 
 @media (min-width: 768px) {
-  .main-nav {
-    &__toggle {
-      display: none;
-    }
+
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__wrapper {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .smain-nav__list--item {
+    margin-right: 5px;
   }
 }

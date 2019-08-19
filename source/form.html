@@ -9,28 +9,31 @@
 </head>
 
 <body>
+
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="функциональный корм для котов">
     </a>
     <nav class="main-nav">
-      <div class="main-nav__toggle" id="hamburger" onclick="myFunction()">
+      <div class="main-nav__toggle main-nav__toggle--active" id="hamburger" onclick="myFunction()">
         <span class="main-nav__toggle-first"></span>
         <span class="main-nav__toggle-second"></span>
         <span class="main-nav__toggle-third"></span>
       </div>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list-item"><a class="site-list-link" href="index.html">главная</a></li>
-          <li class="site-list-item"><a class="site-list-link" href="catalog.html">каталог продукции</a></li>
-          <li class="site-list-item"><a class="site-list-link">подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="index.html">главная</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="catalog.html">каталог продукции</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link">подбор программы</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
   <main class="form-main">
     <form class="programe-choise-form">
       <h1 class="programe-choise-form__title">Подбор программы</h1>
+
       <fieldset class="programe-choise-form__fieldset">
         <legend class="visually-hidden">Имя Вес Возраст</legend>
         <h2 class="programe-choise-form__description">Заполните анкету и мы подберем
@@ -69,19 +72,19 @@
         <legend class="visually-hidden">
           Контактные данные владельца кота
         </legend>
-        <h2 class="programe-choise-form__title-second">Контактные данные<br>(владельца кота)</h2>
+        <h2 class="programe-choise-form__title-second">Контактные данные (владельца кота)</h2>
         <div class="programe-choise-form__input-email">
-          <label class="programe-choise-form__label" for="email">E-MAIL:*
+          <label class="programe-choise-form__label programe-choise-form__label-contact" for="email">E-MAIL:*
             <input class="input-email" id="email" type="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="programe-choise-form__label" for="tel">ТЕЛЕФОН:*
+          <label class="programe-choise-form__label programe-choise-form__label-contact" for="tel">ТЕЛЕФОН:*
             <input class="input-email" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
       </fieldset>
       <fieldset class="programe-choise-form__fieldset">
         <legend class="visually-hidden">Коментарии</legend>
-        <h2 class="programe-choise-form__title-second">Комментарий</h2>
+        <h2 class="programe-choise-form__title--second">Комментарии</h2>
         <textarea class="programe-choise-form__comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" cols="40"
           rows="10"></textarea>
       </fieldset>
@@ -111,20 +114,20 @@
           </label>
         </div>
       </fieldset>
-      <div class="programe-choise-form__botton">
-        <button class="programe-choise-form__botton-botton order-botton" type="submit"
+      <div class="programe-choise-form__bottom">
+        <button class="programe-choise-form__bottom-button order-button" type="submit"
           value="отправить заявку">Отправить заявку</button>
-        <span class="programe-choise-form__commite">* — Обязательные поля</span>
+        <span class="programe-choise-form__bottom--commite">* — Обязательные поля</span>
       </div>
     </form>
-  <footer class="main-footer">
+    <footer class="main-footer">
       <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
       <ul class="main-footer__list">
-        <li class="main-footer__item cooperation">приглашаем
+        <li class="main-footer__item main-footer__cooperation">приглашаем
           к сотрудничеству
           дилеров!
         </li>
-        <li class="main-footer__item our-address">ул. Большая
+        <li class="main-footer__item main-footer__our-address">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
         </li>

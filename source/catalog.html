@@ -17,23 +17,23 @@
     </a>
 
     <nav class="main-nav">
-      <div class="main-nav__toggle" id="hamburger" onclick="myFunction()">
+      <div class="main-nav__toggle main-nav__toggle--active" id="hamburger" onclick="myFunction()">
         <span class="main-nav__toggle-first"></span>
         <span class="main-nav__toggle-second"></span>
         <span class="main-nav__toggle-third"></span>
       </div>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list-item"><a class="site-list-link" href="index.html">главная</a></li>
-          <li class="site-list-item"><a class="site-list-link">каталог продукции</a></li>
-          <li class="site-list-item"><a class="site-list-link" href="form.html">подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="index.html">главная</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link">каталог продукции</a></li>
+          <li class="main-nav__list--item"><a class="main-nav__list--link" href="form.html">подбор программы</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main class="catalog-main">
-    <h1 class="catalog-of-producs">Каталог продукции</h1>
+    <h1 class="catalog-of-products">Каталог продукции</h1>
 
     <section class="products">
       <article class="products-card">
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__botton order-botton" href="#">Заказать</a>
+        <a class="products-card__botton order-button" href="#">Заказать</a>
       </article>
 
       <article class="products-card">
@@ -82,7 +82,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
       <article class="products-card">
         <a class="products-card__link products-card__link--image" href="#">
@@ -105,7 +105,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
       <article class="products-card">
         <a class="products-card__link products-card__link--image" href="#">
@@ -128,7 +128,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
       <article class="products-card">
         <a class="products-card__link products-card__link--image" href="#">
@@ -152,7 +152,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
       <article class="products-card">
         <a class="products-card__link products-card__link--image" href="#">
@@ -176,7 +176,7 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
       <article class="products-card">
         <a class="products-card__link products-card__link--image" href="#">
@@ -200,12 +200,12 @@
             </li>
           </ul>
         </div>
-        <a class="products-card__link order-botton" href="#">Заказать</a>
+        <a class="products-card__link order-button" href="#">Заказать</a>
       </article>
 
       <article class="show-all-products">
-        <div class="show-all-products__inscription inscription">
-          <span class="inscription__image">
+        <div class="show-all-products__inscription">
+          <span class="show-all-products__inscription--image">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30"
               viewBox="0 0 30 30">
               <g>
@@ -216,8 +216,8 @@
               </g>
             </svg>
           </span>
-          <span class="inscription__title-show">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</span>
-          <span class="inscription__title-real">На самом деле вкусов гораздо больше!</span>
+          <span class="show-all-products__inscription--show">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</span>
+          <span class="show-all-products__inscription--real">На самом деле вкусов гораздо больше!</span>
         </div>
         <a class="show-all-products__botton show-botton" href="#">ПОКАЗАТЬ ВСЕ</a>
       </article>
@@ -234,7 +234,7 @@
             <li class="products-info__item">200 Р.</li>
           </ul>
         </div>
-        <a class="products-info__link order-botton" href="#">Заказать</a>
+        <a class="products-info__link order-button" href="#">Заказать</a>
       </article>
 
       <article class="products-info">
@@ -245,7 +245,7 @@
             <li class="products-info__item">50 Р.</li>
           </ul>
         </div>
-        <a class="products-info__link order-botton" href="#">Заказать</a>
+        <a class="products-info__link order-button" href="#">Заказать</a>
       </article>
 
       <article class="additional-products products-info">
@@ -256,7 +256,7 @@
             <li class="products-info__item">100 Р.</li>
           </ul>
         </div>
-        <a class="products-info__link order-botton" href="#">Заказать</a>
+        <a class="products-info__link order-button" href="#">Заказать</a>
       </article>
 
       <article class="additional-products products-info">
@@ -267,13 +267,13 @@
             <li class="products-info__item">300 Р.</li>
           </ul>
         </div>
-        <a class="products-info__link order-botton" href="#">Заказать</a>
+        <a class="products-info__link order-button" href="#">Заказать</a>
       </article>
 
       <article class="marketing-action">
         <h3 class="visually-hidden">Выгодная покупка!</h3>
-        <div class="marketing-action__info action-info">
-          <span class="action-info__image">
+        <div class="marketing-action__info">
+          <span class="marketing-action__info--image">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60"
               viewBox="0 0 55 60">
               <g>
@@ -284,7 +284,7 @@
               </g>
             </svg>
           </span>
-          <div class="action-info__title">Закажите все
+          <div class="marketing-action__info--title">Закажите все
             и получите чехол для
             кота в подарок!
           </div>
@@ -295,11 +295,11 @@
     <footer class="main-footer">
       <h2 class="visually-hidden"> Как нас найти - адресс, карта, контакты, социальные сети</h2>
       <ul class="main-footer__list">
-        <li class="main-footer__item cooperation">приглашаем
+        <li class="main-footer__item main-footer__cooperation">приглашаем
           к сотрудничеству
           дилеров!
         </li>
-        <li class="main-footer__item our-address">ул. Большая
+        <li class="main-footer__item main-footer__our-address">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
         </li>
@@ -388,8 +388,8 @@
         </ul>
 
         <div class="main-footer__developed developed">
-          <a class="developed__link developed__link-academy" href="#">HTML Academy</a>
-          <a class="developed__link developed__link-icon" href="#">
+          <a class="developed__link developed__link--academy" href="#">HTML Academy</a>
+          <a class="developed__link developed__link--icon" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <path fill="#818181"
                 d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />

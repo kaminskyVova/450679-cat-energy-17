@@ -1,0 +1,435 @@
+.programe-choise-form__title {
+  color: #111111;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+////////////////////////////////////////////
+
+.programe-choise-form__fieldset {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.programe-choise-form__description {
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: #111111;
+  font-family: @fontOswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.programe-choise-form__label {
+  text-transform: uppercase;
+  font-family: @fontOswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+///////////////////////////////////////
+
+.programe-choise-form__label-name {
+
+  margin-bottom: 13px;
+
+
+#name {
+  width: 225px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#weight {
+  width: 204px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+#age {
+  width: 172px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  padding: 13px;
+  color: #444444;
+  font-family: @fontOswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+}
+
+/////////////////////////////////////////////////////
+
+
+.programe-choise-form__input-radio {
+  box-sizing: border-box;
+  width: 280px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.programe-choise-form__radio {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.input-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &:checked {
+
+    +.programe-choise-form__label-style {
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.programe-choise-form__label-style {
+  display: block;
+  margin-right: 15px;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #68b738;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+}
+
+
+////////////////////////////////////////////
+
+.programe-choise-form__input-email {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+.programe-choise-form__title {
+  margin-bottom: 15px;
+  font-family: @fontOswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#email {
+  width: 219px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  margin-left: 11px;
+}
+
+#tel {
+  width: 204px;
+  height: 45px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+input::placeholder {
+  padding: 13px;
+  color: #444444;
+  font-family: @fontOswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+}
+/////////////////////////////////////////////
+
+.programe-choise-form__title--second {
+  width: 220px;
+  color: #111111;
+  font-family: @fontOswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 280px;
+  height: 150px;
+  border: 1px solid #cdcdcd;
+  padding-left: 10px;
+
+  &::placeholder {
+    color: #444444;
+    font-family: @fontOswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+//////////////////////////////////////////
+
+
+.programe-choise-form__input-checkbox {
+  box-sizing: border-box;
+  width: 280px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+
+  .programe-choise-form__label {
+    margin-bottom: 30px;
+  }
+}
+
+.programe-choise-form__checkbox {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.input-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &:checked {
+
+    +.programe-choise-form__checkbox-style {
+
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.programe-choise-form__checkbox-style {
+  display: block;
+  margin-right: 15px;
+  position: relative;
+
+  height: 30px;
+  width: 30px;
+  border: 1px solid #cdcdcd;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #68b738;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity .3s;
+    top: 16px;
+    left: 4px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #68b738;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity .3s;
+    top: 14px;
+    left: 9px;
+  }
+}
+
+/////////////////////////////////////////////
+
+.programe-choise-form__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.programe-choise-form__bottom-bottun {
+  border: none;
+  padding-top: 10px;
+}
+
+.programe-choise-form__bottom--commite {
+  display: block;
+  color: #444444;
+  font-family: @fontArial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  margin: 0 auto;
+}
+
+
+/////////////////////////////////////////////
+
+
+
+
+@media (min-width: 768px) {
+
+  .programe-choise-form__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  .programe-choise-form__fieldset {
+    width: 708px;
+    padding-left: 40px;
+
+    .programe-choise-form__input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+    }
+
+    .programe-choise-form__description {
+      width: 370px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      margin-bottom: 65px;
+    }
+
+
+    .programe-choise-form__label {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .programe-choise-form__label-name {
+
+    #name {
+      width: 562px;
+    }
+
+    #weight {
+      width: 536px;
+    }
+
+    #age {
+      width: 497px;
+    }
+
+    input::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  /////////////////////////////////
+
+  .programe-choise-form__input-radio {
+    width: 630px;
+    margin: 0 auto;
+    border: 1px solid #cdcdcd;
+    padding-left: 25px;
+    margin: 0;
+  }
+
+  ///////////////////////////////////////
+
+  .programe-choise-form__title-second {
+    width: 550px;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .programe-choise-form__label-contact {
+    width: 708px;
+  }
+
+  #email {
+    width: 555px;
+  }
+
+  #tel {
+    width: 535px;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+
+
+
+  ////////////////////////////////////////
+
+
+}
