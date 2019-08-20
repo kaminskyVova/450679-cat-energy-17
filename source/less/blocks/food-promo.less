@@ -9,30 +9,31 @@
   padding: 0;
   background-image: url("../img/index-background-mobile@1x.jpg");
   margin-bottom: 195px;
-
-  .food-promo__title-top {
-    color: #ffffff;
-    font-family: @fontOswald;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    padding-left: 35px;
-    margin-top: 30px;
-    margin-bottom: 18px;
-    padding-left: 10px;
-  }
-
-
-  .food-promo__title-bottom {
-    color: #ffffff;
-    font-family: @fontOswald;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    text-transform: uppercase;
-    padding-left: 57px;
-  }
 }
+
+.food-promo__title--top {
+  color: #ffffff;
+  font-family: @fontOswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding-left: 10px;
+}
+
+
+.food-promo__title--bottom {
+  color: #ffffff;
+  font-family: @fontOswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 57px;
+}
+
 
 //////////////////////////////
 
@@ -75,9 +76,9 @@
     margin-bottom: 500px;
   }
 
-  .food-promo__title-top {
+  .food-promo__title--top {
     padding: 0;
-    color: #111111;             // не применился цвет /////////
+    color: #111111;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -93,13 +94,12 @@
     padding: 0;
   }
 
-
   .food-promo__logo {
     width: 570px;
     margin: 0 auto;
     border: @border-time;
     position: absolute;
-    top: 220px;
+    top: 320px;
     left: 0;
     z-index: 3;
   }
@@ -111,6 +111,45 @@
     position: absolute;
     top: 35px;
     left: 0;
+    z-index: 6;
+  }
+}
+
+
+@media (min-width: 1400px) {
+
+  .food-promo {
+    position: absolute;
+    top: 260px;
+    left: 195px;
+    z-index: 3;
+  }
+
+  .food-promo__title--top {
+    width: 450px;
+    height: 122px;
+    color: #111111;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    position: relative;
+  }
+
+  .food-promo__title-bottom {
+    padding-left: 0;
+  }
+
+  .food-promo__logo {
+    position: absolute;
+    left: 370px;
+    top: -60px;
+    z-index: 6;
+  }
+
+  .food-promo__link {
+    position: absolute;
+    top: 320px;
+    left: -370px;
     z-index: 6;
   }
 }

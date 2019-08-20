@@ -1,12 +1,18 @@
-.programe-choise-form__title {
+.programe-choise-form__title--first {
   color: #111111;
-  font-family: "Oswald";
+  font-family: @fontOswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-
   margin: 0;
   margin-bottom: 25px;
+}
+
+
+.programe-choise-form__input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 ////////////////////////////////////////////
@@ -42,44 +48,44 @@
 
 ///////////////////////////////////////
 
+///// стилизация placeholder /////
+
 .programe-choise-form__label-name {
+  margin-bottom: 20px;
 
-  margin-bottom: 13px;
+  #name {
+    width: 225px;
+    height: 45px;
+    border: 1px solid #cdcdcd;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 
+  #weight {
+    width: 204px;
+    height: 45px;
+    border: 1px solid #cdcdcd;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
 
-#name {
-  width: 225px;
-  height: 45px;
-  border: 1px solid #cdcdcd;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
+  #age {
+    width: 172px;
+    height: 45px;
+    border: 1px solid #cdcdcd;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
 
-#weight {
-  width: 204px;
-  height: 45px;
-  border: 1px solid #cdcdcd;
-  margin-left: 8px;
-  margin-bottom: 10px;
-}
-
-#age {
-  width: 172px;
-  height: 45px;
-  border: 1px solid #cdcdcd;
-  margin-left: 8px;
-  margin-bottom: 10px;
-}
-
-input::placeholder {
-  padding: 13px;
-  color: #444444;
-  font-family: @fontOswald;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+  .programe-choise-form__input-name::placeholder {
+    padding: 13px;
+    color: #444444;
+    font-family: @fontOswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
 
 /////////////////////////////////////////////////////
@@ -154,6 +160,20 @@ input::placeholder {
 
 ////////////////////////////////////////////
 
+.programe-choise-form__title--second {
+  width: 200px;
+  color: #111111;
+  font-family: @fontOswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.programe-choise-form__label-contact {
+  margin-bottom: 20px;
+}
+
 .programe-choise-form__input-email {
   box-sizing: border-box;
   margin: 0;
@@ -161,13 +181,14 @@ input::placeholder {
   width: 320px;
   display: flex;
   flex-direction: column;
+}
 
-.programe-choise-form__title {
-  margin-bottom: 15px;
+.programe-choise-form__title--second {
+  color: #111111;
   font-family: @fontOswald;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 #email {
@@ -186,7 +207,7 @@ input::placeholder {
   margin-left: 10px;
 }
 
-input::placeholder {
+.input-email::placeholder {
   padding: 13px;
   color: #444444;
   font-family: @fontOswald;
@@ -195,10 +216,11 @@ input::placeholder {
   line-height: 18px;
   text-transform: uppercase;
 }
-}
+
+
 /////////////////////////////////////////////
 
-.programe-choise-form__title--second {
+.programe-choise-form__title--third {
   width: 220px;
   color: #111111;
   font-family: @fontOswald;
@@ -227,7 +249,7 @@ textarea {
 //////////////////////////////////////////
 
 
-.programe-choise-form__input-checkbox {
+.programe-choise-form__input--checkbox {
   box-sizing: border-box;
   width: 280px;
   border-top: 1px solid #ededed;
@@ -260,7 +282,7 @@ textarea {
 
   &:checked {
 
-    +.programe-choise-form__checkbox-style {
+    +.programe-choise-form__checkbox--style {
 
       &:before,
       &:after {
@@ -271,7 +293,7 @@ textarea {
 }
 
 
-.programe-choise-form__checkbox-style {
+.programe-choise-form__checkbox--style {
   display: block;
   margin-right: 15px;
   position: relative;
@@ -309,14 +331,25 @@ textarea {
 
 /////////////////////////////////////////////
 
+.programe-choise-form__title--fourth {
+  color: #111111;
+  font-family: @fontOswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+////////////////////////////////////////////
+
 .programe-choise-form__bottom {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
-.programe-choise-form__bottom-bottun {
+.programe-choise-form__bottom--button {
   border: none;
-  padding-top: 10px;
+  //padding-top: 10px;
 }
 
 .programe-choise-form__bottom--commite {
@@ -334,11 +367,10 @@ textarea {
 /////////////////////////////////////////////
 
 
-
-
 @media (min-width: 768px) {
 
-  .programe-choise-form__title {
+  .programe-choise-form__title--first {
+    color: #111111;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -347,7 +379,8 @@ textarea {
 
   .programe-choise-form__fieldset {
     width: 708px;
-    padding-left: 40px;
+    margin: 0 auto;
+    //padding-left: 40px;
 
     .programe-choise-form__input {
       display: flex;
@@ -405,31 +438,109 @@ textarea {
 
   ///////////////////////////////////////
 
-  .programe-choise-form__title-second {
+  .programe-choise-form__title--second {
     width: 550px;
     font-size: 36px;
     margin-bottom: 60px;
   }
 
   .programe-choise-form__label-contact {
-    width: 708px;
+    display: flex;
+    flex-direction: row;
+    width: 640px;
   }
 
   #email {
+    display: block;
     width: 555px;
+    border: 1px solid #cdcdcd;
   }
 
   #tel {
     width: 535px;
   }
 
-  input::placeholder {
+  .input-email::placeholder {
     font-size: 20px;
   }
 
+  ////////////////////////////////////////
 
+  .programe-choise-form__title--third {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .programe-choise-form__comment {
+    width: 631px;
+  }
+
+  .programe-choise-form__comment::placeholder {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 17px;
+  }
+
+
+  /////////////////////////////////////////////////
+
+  .programe-choise-form__title--fourth {
+    width: 209px;
+    color: #111111;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .programe-choise-form__input--checkbox {
+    border: none;
+    width: 600px;
+    margin: 0 auto;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .programe-choise-form__checkbox:nth-child(1) {
+    margin-right: 70px;
+  }
+
+  .programe-choise-form__checkbox:nth-child(2) {
+    margin-right: 50px;
+  }
+
+  .programe-choise-form__checkbox:last-child {
+    padding-right: 89px;
+  }
 
   ////////////////////////////////////////
 
+  .programe-choise-form__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 
+  .programe-choise-form__bottom--button {
+    width: 283px;
+    height: 52px;
+    margin-right: 90px;
+    outline: none;
+    border: none;
+  }
+
+  .programe-choise-form__bottom--commite {
+    color: #444444;
+    font-family: @fontArial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 0;
+  }
 }

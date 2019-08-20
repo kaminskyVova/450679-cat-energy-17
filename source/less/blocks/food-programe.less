@@ -12,7 +12,12 @@
 }
 
 
-
+@media (min-width: 1440px) {
+  .food-programe {
+    width: 1260px;
+    margin: 0 auto;
+  }
+}
 
 
 // общий стиль для food-programe__choice-slim food-programe__choice-pro /////////////////
@@ -146,7 +151,6 @@
 
   .food-programe__choice {
     width: 708px;
-    //height: 372px;
     margin: 0 auto;
     margin-bottom: 30px;
     padding-left: 55px;
@@ -199,5 +203,56 @@
     svg {
       width: 100px;
     }
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .food-programe {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    //margin-bottom: 75px;
+  }
+
+  .food-programe__choice {
+    width: 1220px;
+
+  }
+
+  .food-programe__choice-slim,
+  .food-programe__choice-pro {
+    width: 530px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .food-programe__choice-title-slim,
+  .food-programe__choice-title-pro {
+    padding-left: 130px;
+    padding-top: 17px;
+    margin-bottom: 30px;
+  }
+
+
+  .food-programe__choise-image,
+  .food-programe__choise-image-pro {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    svg {
+      width: 70px;
+    }
+  }
+
+  .food-programe__choise-image-pro {
+    svg {
+      width: 134px;
+    }
+
   }
 }

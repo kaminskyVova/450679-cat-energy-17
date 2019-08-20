@@ -92,7 +92,7 @@
 @media (min-width: 768px) {
 
   .main-footer__list {
-    width: 708px;
+    width: 100%;
     height: 200px;
     padding: 70px;
     box-sizing: border-box;
@@ -148,5 +148,27 @@
       fill: #8a8a8a;
       width: 40px;
     }
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .main-footer {
+    position: relative;
+  }
+
+  .main-footer__map {
+    background-color: #8a8a8a;
+    height: 400px;
+  }
+
+  .main-footer__index-list {
+    position: absolute;
+    background-color: #ffffff;
+    width: 570px;
+    top: 90px;
+    left: 114px;
+    z-index: 30;
   }
 }

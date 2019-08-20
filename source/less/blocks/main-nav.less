@@ -54,7 +54,7 @@
   border-top: 1px solid #e6e6e6;
 }
 
-.main-nav__list--link{
+.main-nav__list--link {
   display: block;
   padding-top: 20px;
   color: #111111;
@@ -63,7 +63,6 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
-
 }
 
 
@@ -93,6 +92,7 @@
     display: block;
   }
 }
+
 //////////////////////////////////////////////////
 
 
@@ -101,6 +101,7 @@
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__wrapper {
     display: flex;
   }
@@ -112,5 +113,37 @@
 
   .smain-nav__list--item {
     margin-right: 5px;
+    border: none;
+  }
+}
+
+
+@media (min-width: 1440px) {
+
+  .main-nav {
+    width: 722px;
+    height: 696px;
+    background-image: url(../../img/index-background-desktop.jpg);
+  }
+
+  .main-nav__list {
+    width: 520px;
+    margin: 0 auto;
+    padding-top: 65px;
+    border: none;
+    color: #ffffff;
+  }
+
+  .main-nav__list--item {
+    border: none;
+  }
+
+  .main-nav__list--link {
+    font-family: @fontOswald;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+    text-transform: uppercase;
   }
 }
