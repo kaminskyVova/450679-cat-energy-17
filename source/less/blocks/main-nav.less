@@ -118,27 +118,26 @@
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
-  .main-nav {
+  //////////index////////
+
+  .main-nav__index {
     width: 722px;
     height: 696px;
     background-image: url(../../img/index-background-desktop.jpg);
   }
 
-  .main-nav__list {
+  .main-nav__list--index {
     width: 520px;
     margin: 0 auto;
     padding-top: 65px;
+    padding-right: 0;
     border: none;
     color: #ffffff;
   }
 
-  .main-nav__list--item {
-    border: none;
-  }
-
-  .main-nav__list--link {
+  .main-nav__list--link-index {
     font-family: @fontOswald;
     color: #ffffff;
     font-size: 20px;
@@ -146,4 +145,18 @@
     line-height: 24.86px;
     text-transform: uppercase;
   }
+
+  ////////////////////////////////
+
+  .main-nav__list {
+    width: 520px;
+    margin: 0 auto;
+    padding-right: 63px;
+    //padding-top: 0;
+  }
+
+  .main-nav__list--item {
+    border: none;
+  }
+
 }

@@ -53,7 +53,8 @@
 .programe-choise-form__label-name {
   margin-bottom: 20px;
 
-  #name {
+
+  .programe-choise-form__input--name {
     width: 225px;
     height: 45px;
     border: 1px solid #cdcdcd;
@@ -61,7 +62,7 @@
     margin-bottom: 10px;
   }
 
-  #weight {
+  .programe-choise-form__input--weight {
     width: 204px;
     height: 45px;
     border: 1px solid #cdcdcd;
@@ -69,24 +70,25 @@
     margin-bottom: 10px;
   }
 
-  #age {
+  .programe-choise-form__input--age {
     width: 172px;
     height: 45px;
     border: 1px solid #cdcdcd;
     margin-left: 8px;
     margin-bottom: 10px;
   }
-
-  .programe-choise-form__input-name::placeholder {
-    padding: 13px;
-    color: #444444;
-    font-family: @fontOswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
 }
+
+.programe-choise-form__input-text::placeholder {
+  padding: 13px;
+  color: #444444;
+  font-family: @fontOswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 
 /////////////////////////////////////////////////////
 
@@ -174,7 +176,7 @@
   margin-bottom: 20px;
 }
 
-.programe-choise-form__input-email {
+.programe-choise-form__input-email-tel {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -191,7 +193,7 @@
   line-height: 24px;
 }
 
-#email {
+.programe-choise-form__input-email {
   width: 219px;
   height: 45px;
   border: 1px solid #cdcdcd;
@@ -199,7 +201,7 @@
   margin-left: 11px;
 }
 
-#tel {
+.programe-choise-form__input-tel {
   width: 204px;
   height: 45px;
   border: 1px solid #cdcdcd;
@@ -377,6 +379,15 @@ textarea {
     margin-bottom: 50px;
   }
 
+  .programe-choise-form__description {
+    width: 370px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+  }
+
   .programe-choise-form__fieldset {
     width: 708px;
     margin: 0 auto;
@@ -387,15 +398,6 @@ textarea {
       flex-direction: column;
       margin-bottom: 50px;
 
-    }
-
-    .programe-choise-form__description {
-      width: 370px;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      text-transform: uppercase;
-      margin-bottom: 65px;
     }
 
 
@@ -409,15 +411,15 @@ textarea {
 
   .programe-choise-form__label-name {
 
-    #name {
+    .programe-choise-form__input--name {
       width: 562px;
     }
 
-    #weight {
+    .programe-choise-form__input--weight {
       width: 536px;
     }
 
-    #age {
+    .programe-choise-form__input--age {
       width: 497px;
     }
 
@@ -450,13 +452,13 @@ textarea {
     width: 640px;
   }
 
-  #email {
+  .programe-choise-form__input-email {
     display: block;
     width: 555px;
     border: 1px solid #cdcdcd;
   }
 
-  #tel {
+  .programe-choise-form__input-tel {
     width: 535px;
   }
 
@@ -543,4 +545,90 @@ textarea {
     line-height: 16px;
     margin-left: 0;
   }
+}
+
+
+
+@media (min-width: 1300px) {
+
+  .programe-choise-form__fieldset {
+    width: 1200px;
+  }
+
+  .programe-choise-form__tablet {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .programe-choise-form__tablet--fieldset {
+    width: 506px;
+  }
+
+  .programe-choise-form__label-name {
+
+    .programe-choise-form__input--name {
+      width: 400px;
+    }
+
+    .programe-choise-form__input--weight {
+      width: 336px;
+    }
+
+    .programe-choise-form__input--age {
+      width: 297px;
+    }
+
+  }
+
+  .programe-choise-form__input-radio {
+    padding-top: 40px;
+  }
+
+  ////////////////////////////////////////
+
+  .programe-choise-form__input-email-tel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .programe-choise-form__label-contact {
+    width: 570px;
+
+  }
+
+  .programe-choise-form__input-email {
+    width: 470px;
+  }
+
+  .programe-choise-form__input-tel {
+    width: 470px;
+  }
+
+  .programe-choise-form__comment {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  //////////////////////////////////////////////
+
+  .programe-choise-form__input--checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  ///////////////////////////////////////////////
+
+  .programe-choise-form__bottom--button {
+    width: 568px;
+  }
+
 }

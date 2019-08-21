@@ -35,24 +35,42 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
 
-  .main-header {
-    width: 1440px;
+  //////////////// index //////////////////
+
+  .main-header__index {
+    width: 1300px;
+    height: 696px;
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
     position: relative;
     margin-bottom: 80px;
   }
 
-  .main-header__logo {
+  .main-header__logo--index {
     width: 722px;
     height: 696px;
     padding-left: 114px;
     padding-top: 75px;
   }
-    svg {
-      width: 202px;
-    }
+
+  svg {
+    width: 202px;
+  }
+
+  //////////////////////////
+
+  .main-header {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-header__logo {
+    padding-left: 114px;
+  }
+
 }
