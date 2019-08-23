@@ -4,7 +4,7 @@
   box-sizing: border-box;
   position: relative;
   width: 318px;
-  height: 305px;
+  min-height: 305px;
   margin: 0;
   padding: 0;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -12,15 +12,15 @@
 }
 
 .food-promo__title--top {
+  white-space: pre-wrap;
   color: #ffffff;
   font-family: @fontOswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  padding-left: 35px;
-  margin-top: 30px;
+  margin-top: 24px;
   margin-bottom: 18px;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 
@@ -39,12 +39,12 @@
 
 .food-promo__logo {
   width: 280px;
-  height: 313px;
+  min-height: 313px;
   margin: 0 auto;
   border: @border-time;
   position: absolute;
-  top: 170px;
-  left: 20px;
+  top: 165px;
+  left: 18px;
   z-index: 3;
 }
 
@@ -60,7 +60,8 @@
   text-transform: uppercase;
   background-color: #68b738;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 8px;
+  padding-right: 7px;
 }
 
 
@@ -120,14 +121,14 @@
 
   .food-promo {
     position: absolute;
-    top: 260px;
-    left: 195px;
+    top: 240px;
+    left: 140px;
     z-index: 3;
   }
 
   .food-promo__title--top {
     width: 450px;
-    height: 122px;
+    min-height: 122px;
     color: #111111;
     font-size: 60px;
     font-weight: 400;

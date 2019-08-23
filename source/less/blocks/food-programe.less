@@ -27,25 +27,27 @@
 
   box-sizing: border-box;
   font-family: @fontOswald;
-  width: 280px;
-  height: 266px;
+  width: 279px;
+  //height: 266px;
   margin: 0 auto;
   background-color: @backgroundSilver;
-  margin: 20px;
-  padding: 20px;
+ // margin: 20px;
+  padding: 16px;
+  margin-bottom: 30px;
 
 }
 
 .food-programe__choice-description {
-  width: 240px;
+  width: 260px;
   font-family: @fontArial;
   color: #444444;
   font-weight: 400;
   line-height: 18px;
-
+  margin: 0;
+  margin-bottom: 10px;
   border-bottom: 1px solid #dadada;
 
-  margin: 0;
+
   padding-bottom: 20px;
 }
 
@@ -57,7 +59,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 ///////////////////////////////////////////////////
@@ -75,31 +77,31 @@
   font-weight: 400;
   line-height: 37.02px;
   margin: 0;
-  margin-bottom: 20px;
-
-  padding-right: 60px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-right: 65px;
   margin-left: 20px;
 }
 
 .food-programe__choise-image {
   display: block;
+  position: relative;
   width: 50px;
-  height: 51px;
+  height: 50px;
   background-color: #68b738;
   border-radius: 50%;
-  padding-right: 40px;
+  padding-right: 37px;
+  //padding-top: 100px;
 }
 
-
-.food-programe__choise-image {
-  position: relative;
-
-  svg {
-    position: absolute;
-    left: 5px;
-    top: -2px;
-  }
+.food-programe__choise-image--cat {
+  position: absolute;
+  width: 35px;
+  height: 49px;
+  left: 5px;
+  top: -2px;
 }
+
 
 //////////////////////////////////////////////////////
 
@@ -210,6 +212,7 @@
 @media (min-width: 1300px) {
 
   .food-programe {
+    width: 1220px;
     display: flex;
     justify-content: center;
     flex-direction: row;

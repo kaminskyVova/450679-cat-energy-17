@@ -1,6 +1,7 @@
 .main-header {
   border: @border-time;
   width: 320px;
+  margin: 0 auto;
   box-sizing: border-box;
   position: relative;
   min-width: 320px;
@@ -9,11 +10,11 @@
 
 .main-header__logo {
   display: block;
-  width: 200px;
+  width: 205px;
   background-image: rgb(138, 133, 133);
   padding-left: 20px;
   padding-top: 11px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 
 
@@ -37,40 +38,43 @@
 
 @media (min-width: 1300px) {
 
-  //////////////// index //////////////////
-
-  .main-header__index {
-    width: 1300px;
-    height: 696px;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 80px;
-  }
-
-  .main-header__logo--index {
-    width: 722px;
-    height: 696px;
-    padding-left: 114px;
-    padding-top: 75px;
-  }
-
-  svg {
-    width: 202px;
-  }
-
   //////////////////////////
 
   .main-header {
     width: 1300px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .main-header__logo {
     padding-left: 114px;
   }
 
+
+  //////////////// index //////////////////
+  .main-header__index {
+    width: 1220px;
+    margin: 0 auto;
+    //padding-left: 40px;
+    //padding-right: 40px;
+    min-height: 696px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .main-header__logo--index {
+    width: 50%;
+    min-height: 696px;
+    padding-left: 114px;
+    padding-top: 75px;
+
+    svg {
+      width: 202px;
+    }
+  }
 }
