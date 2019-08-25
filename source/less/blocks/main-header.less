@@ -41,21 +41,37 @@
   //////////////////////////
 
   .main-header {
-    width: 1300px;
+    //position: relative;
+    //width: 1220px;
+    //display: flex;
+    //justify-content: space-between;
+    //flex-direction: row;
+  }
+
+
+  .header-content {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    border: @border-time;
   }
-
   .main-header__logo {
-    padding-left: 114px;
+    //padding-left: 114px;
+    border: @border-time;
   }
 
 
   //////////////// index //////////////////
   .main-header__index {
-    width: 1220px;
+    width: auto;
     margin: 0 auto;
+    background-image: url(../img/index-background-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right top;
     //padding-left: 40px;
     //padding-right: 40px;
     min-height: 696px;
@@ -63,18 +79,19 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    position: relative;
     margin-bottom: 80px;
   }
 
   .main-header__logo--index {
-    width: 50%;
-    min-height: 696px;
+    //width: 50%;
+    //min-height: 696px;
     padding-left: 114px;
     padding-top: 75px;
 
+
     svg {
       width: 202px;
+
     }
   }
 }
