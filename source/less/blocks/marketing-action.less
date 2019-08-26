@@ -1,12 +1,5 @@
-
-
 .marketing-action {
-  margin-bottom: 30px;
-}
-
-
-.action-info {
-  width:280px;
+  width: 280px;
   height: 289px;
   margin: 0 auto;
   background-image: url(../img/gift-photo-mobile.jpg);
@@ -15,27 +8,95 @@
   flex-direction: column;
   text-align: center;
 
-    .action-info__title,
-    .action-info-image {
-        display: block;
-    }
-
-    .action-info__image {
-      display: block;
-      padding-top: 60px;
-      margin-bottom: 45px;
-    }
-
-    .action-info__title {
-      width: 160px;
-      text-align: center;
-      color: #ffffff;
-      font-family: @fontArial;
-      font-size: 17px;
-      font-weight: 400;
-      line-height: 20px;
-      margin: 0 auto;
-
-    }
+  margin-bottom: 30px;
 }
 
+.marketing-action__info--title,
+.marketing-action__info--image {
+  display: block;
+}
+
+.marketing-action__info--image {
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 45px;
+}
+
+.marketing-action__info--title {
+  width: 160px;
+  text-align: center;
+  color: #ffffff;
+  font-family: @fontArial;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .marketing-action {
+    width: 708px;
+    background-image: url(../../img/gift-photo-tablet.jpg);
+    margin: 0 auto;
+  }
+
+  .marketing-action__info {
+    width: 500px;
+    min-height: 200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .marketing-action__info--image,
+  .marketing-action__info--title {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1220px) {
+
+  .marketing-action {
+    width: 245px;
+    height: 289px;
+    margin: 0 auto;
+    background-image: url(../img/gift-photo-mobile.jpg);
+    background-size: cover;
+
+    display: flex;                 ///// не хочет /////////////////
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .marketing-action__info--title,
+  .marketing-action__info--image {
+    display: block;
+  }
+
+  .marketing-action__info--image {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 45px;
+  }
+
+  .marketing-action__info--title {
+    width: 160px;
+    text-align: center;
+    color: #ffffff;
+    font-family: @fontArial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+
+}

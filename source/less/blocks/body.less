@@ -1,9 +1,7 @@
-
-
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-       url("../fonts/oswaldmedium.woff") format("woff");
+    url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -11,29 +9,50 @@
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
-       url("../fonts/oswaldregular.woff") format("woff");
+    url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 
 * {
-  box-sizing: border-box;  /// убираю летитят  все  карточки товаров (help SOS помоги ))) )
-  /*margin: 0;
-  padding: 0;*/
+  box-sizing: border-box;
 }
+
 
 body {
   width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
   margin: 0 auto;
   border: 1px solid red;
   margin-top: 30px;
 
-  /*font-family: @fontOswald;*/
   font-family: @fontOswald;
   font-weight: 400;
 }
+
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1220px) {
+  body {
+    width: auto;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -49,11 +68,11 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 ul {
   list-style: none;
@@ -61,22 +80,34 @@ ul {
 
 // кнопка заказать //
 
-.order-botton {
+.order-button {
   display: block;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
+  text-align: center;
   background-color: green;
   text-align: center;
   padding-top: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
 
   color: #ffffff;
-  font-family: Oswald;
+  font-family: @fontOswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+
+  .order-button {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 ///////////////////////////////
