@@ -10,6 +10,7 @@
     margin: 0 auto;
     margin-top: -50px;
   }
+
 }
 
 
@@ -19,6 +20,7 @@
     margin: 0 auto;
     margin-top: -800px;
   }
+
 }
 
 
@@ -151,7 +153,10 @@
 @media (min-width: 768px) {
 
   .food-programe__choice {
-    width: 708px;
+    //width: 708px;
+    width: 92%;
+    max-width: 1220px;
+    min-height: 372px;
     margin: 0 auto;
     margin-bottom: 30px;
     padding-left: 55px;
@@ -172,8 +177,18 @@
 
   .food-programe__choise-image {
     position: absolute;
-    top: 60px;
+    top: 0px;
     right: 60px;
+    width: 200px;
+    height: 200px;
+
+    svg {
+      position: relative;
+      width: 140px;
+      height: 194px;
+      top: 0px;
+      left: 40px;
+    }
   }
 
 
@@ -198,11 +213,17 @@
 
   .food-programe__choise-image-pro {
     position: absolute;
-    top: 60px;
+    top: -20px;
     right: 60px;
+    width: 200px;
+    height: 200px;
 
     svg {
-      width: 100px;
+      position: relative;
+      width: 268px;
+      height: 112px;
+      top: 30px;
+      left: -40px;
     }
   }
 }
