@@ -135,18 +135,60 @@
 
 @media (min-width: 1220px) {
 
-  .how-to-use{
-    width: 1220px;
+  .how-to-use {
+    width: 1222px;
     margin: 0 auto;
+    padding: 0;
+
+  }
+
+  .how-to-use__title {
+    margin-bottom: 72px;
+    padding-left: 3px;
   }
 
   .how-to-use__list {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .how-to-use__item {
-    width: 246px;
+    width: 243px;
+    margin: 0;
+    padding-top: 3px;
   }
+
+  .how-to-use__item:nth-child(1),
+  .how-to-use__item:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .how-to-use__item-number {
+    right: 17px;
+  }
+
+  .how-to-use__item-number--two,
+  .how-to-use__item-number--three {
+    right: 0;
+  }
+
+  .how-to-use__item-number--four {
+    right: -5px;
+  }
+
+  .how-to-use__item-image {
+    margin-bottom: 31px;
+
+    text-align: center;
+    width: 82px;
+    height: 80px;
+  }
+
+  .how-to-use__item-description--one {
+    padding-left: 3px;
+  }
+
 }

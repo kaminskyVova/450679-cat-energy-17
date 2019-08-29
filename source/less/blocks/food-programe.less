@@ -218,42 +218,114 @@
   }
 
   .food-programe__choice {
-    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
 
   }
 
   .food-programe__choice-slim,
   .food-programe__choice-pro {
-    width: 530px;
+    width: 570px;
+    min-height: 373px;
     flex-direction: column;
     position: relative;
   }
 
-  .food-programe__choice-title-slim,
-  .food-programe__choice-title-pro {
-    padding-left: 130px;
-    padding-top: 17px;
-    margin-bottom: 30px;
+  .food-programe__choice-title-slim {
+    font-size: 36px;
+    line-height: 37.02px;
+    padding-left: 139px;
+    padding-top: 16px;
+    margin: 0;
+    margin-bottom: 72px;
   }
 
+  .food-programe__choice-title-pro {
+    font-size: 36px;
+    line-height: 37.02px;
+    padding-left: 179px;
+    padding-top: 15px;
+    margin: 0;
+    margin-bottom: 72px;
+  }
 
-  .food-programe__choise-image,
+  .food-programe__choise-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -13px;
+    left: -22px;
+
+    .food-programe__choise-image--cat {
+      width: 75px;
+      height: 94px;
+      left: 9px;
+      top: -3px;
+
+    }
+  }
+
   .food-programe__choise-image-pro {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: -10px;
-    left: 0;
+    top: -12px;
+    left: 15px;
 
-    svg {
-      width: 70px;
+    .food-programe__choise-image--panter {
+      position: absolute;
+      width: 134px;
+      height: 56px;
+      top: 17px;
+      left: -17px;
     }
   }
 
-  .food-programe__choise-image-pro {
-    svg {
-      width: 134px;
-    }
+  .food-programe__choice-description--cat {
+    min-width: 465px;
+    min-height: 64px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -22px;
+    margin-bottom: 12px;
+    padding-top: 2px;
+  }
 
+  .food-programe__choice-description--panter {
+    min-width: 465px;
+    min-height: 63px;
+    font-size: 16px;
+    padding-left: 18px;
+    line-height: 24px;
+  }
+
+  .food-programe__choice-link {
+    font-size: 20px;
+    padding: 0;
+    width: 156px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .food-programe__choice-link--cat {
+    margin-left: -21px;
+  }
+
+  .food-programe__choice-link--panter {
+    padding-left: 19px;
+    width: 167px;
+  }
+
+  .food-programe__choice-link--arrow {
+    display: block;
+
+    img {
+      width: 24px;
+      height: 16px;
+    }
   }
 }
